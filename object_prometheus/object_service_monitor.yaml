@@ -1,0 +1,23 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: nutanix-objects-store
+  namespace: ocp1ipi-monitoring
+spec:
+  endpoints:
+    - interval: 30s
+      basicAuth:
+        password:
+          name: pc-creds
+          key: password
+        username:
+          name: pc-creds
+          key: user
+      path: /oss/api/nutanix/metrics
+      port: objects-metrics
+      scheme: https
+      tlsConfig:
+        insecureSkipVerify: true
+  selector:
+    matchLabels:
+      external-infra-monitor: "true"

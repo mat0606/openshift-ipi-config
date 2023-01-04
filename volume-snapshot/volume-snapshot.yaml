@@ -1,0 +1,9 @@
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: pvc-vol-01-snapshot1
+  namespace: default
+spec:
+  volumeSnapshotClassName: nutanix-snapshot-class
+  source:
+    persistentVolumeClaimName: pvc-vol-01 

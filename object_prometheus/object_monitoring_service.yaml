@@ -1,0 +1,15 @@
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  labels:
+    external-infra-monitor: "true"
+  name: "external-nutanix-objects"
+  namespace: ocp1ipi-monitoring
+spec:
+  ports:
+  - name: "objects-metrics"
+    protocol: "TCP"
+    port: 9440
+    targetPort: 9440 
+    nodePort: 0
+selector: {}

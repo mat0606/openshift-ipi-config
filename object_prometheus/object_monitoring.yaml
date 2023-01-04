@@ -1,0 +1,11 @@
+kind: "Endpoints"
+apiVersion: "v1"
+metadata:
+  name: "external-nutanix-objects"
+  namespace: ocp1ipi-monitoring
+subsets: 
+  - addresses:
+      - ip: "10.38.252.39" 
+    ports:
+      - port: 9440 
+        name: "objects-metrics"

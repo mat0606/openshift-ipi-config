@@ -1,0 +1,52 @@
+apiVersion: oadp.openshift.io/v1alpha1
+kind: DataProtectionApplication
+metadata:
+  name: oadp-ntnx
+  namespace: openshift-adp
+spec:
+  configuration:
+    velero:
+      defaultPlugins:
+        - openshift
+        - aws
+        - csi
+    featureFlags:
+    - EnableCSI
+    restic:
+      enable: false
+  backupLocations:
+    - name: default
+      velero:
+        provider: aws
+        default: true
+        objectStorage:
+          bucket: ocp1ipi-bucket 
+          prefix: velero
+          caCert: -----BEGIN CERTIFICATE-----
+MIIDQzCCAiugAwIBAgIQIpg2STih4Opb44p4aV+EhTANBgkqhkiG9w0BAQsFADAX
+MRUwEwYDVQQKEwxOdXRhbml4IEluYy4wIBcNMjIxMjE0MDAxODA1WhgPMjIwMjA1
+MjAwMDE4MDVaMBcxFTATBgNVBAoTDE51dGFuaXggSW5jLjCCASIwDQYJKoZIhvcN
+AQEBBQADggEPADCCAQoCggEBALgkN5RR7N1c1Lpgf+87prZ9fsbtBMQ1N3PuhlQp
+7mujpt6zUDIaP7LPwkO1nUJ4AP8XT/G06euIQHzkEim7nn1pJSak+YwmXDiL8KM3
+y+/2uYMaLyJnpkIOKi7J1cKoyawBZD09chf2zgLeHZ4pdZBXDGe3VkypRUzutxw5
+rgE8NTZ8WoITwVH3FhLmD2eXB8T2l7dOgwi8LEeQNkGQ2+YNNodeAxFHGWKw7Lu4
+pkhzsfHQR8Rr2DR+4hxS7qoOBBihVCtBysO5cWfZfOmVeCw+Jaf1f6u1fm4OenQp
+4XH1KAuFgmC90HA0XPuZbUL/Q5jThuW14xbTlsLJ22LpsV0CAwEAAaOBiDCBhTAO
+BgNVHQ8BAf8EBAMCAqQwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUEm0omQIq
+676aRmo0ZGMrvPYId5kwQwYDVR0RBDwwOoIabnRueC1vYmplY3RzLm50bnhsYWIu
+bG9jYWyCHCoubnRueC1vYmplY3RzLm50bnhsYWIubG9jYWwwDQYJKoZIhvcNAQEL
+BQADggEBAE/lgKY9FBdTl0CzShRPRPrszWX91IHPf7flOL96qpwz+PXqaUbHuPqQ
+AbBg+5klmq3y9h1Ph6GNxQL34YGeYOhki5W0jF/PSqSzZfBE+VmXCmJdMzWpaNjy
+uWRRnkzopjhJKZjCmEY72Woj4szwzrHkK7qMKYUNycbXASIyiAx+mIbowDKXoiA1
+02fJIbKTp8fRBJ3uLNWVUSsEP46fxjFfuh1bkR0CCxE38R48mUAjMrrMOUPoZ6Kq
+Pb+T8xnUJkKU0bNl4+7RcIcjnxqKRmsHOI2MK2oYsi5gCZFQVESk66bIgY8iH/d+
+2y765AaMkQS0SNBj6/fgrOlIQinzjvs=
+-----END CERTIFICATE----- 
+        config:
+          insecureSkipTLSVerify: "true"
+          region: us-east-1
+          s3ForcePathStyle: "true"
+          s3Url: https://ntnx-object.ntnxlab.local
+      credential:
+        key: credentials-velero
+        name: cloud-credentials
