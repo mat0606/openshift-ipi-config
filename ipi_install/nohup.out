@@ -1,0 +1,1765 @@
+level=debug msg=OpenShift Installer 4.11.20
+level=debug msg=Built from commit 7e60d787431c862a90f6ffc918b24251516f0585
+level=debug msg=Fetching Metadata...
+level=debug msg=Loading Metadata...
+level=debug msg=  Loading Cluster ID...
+level=debug msg=    Loading Install Config...
+level=debug msg=      Loading SSH Key...
+level=debug msg=      Using SSH Key loaded from state file
+level=debug msg=      Loading Base Domain...
+level=debug msg=        Loading Platform...
+level=debug msg=        Using Platform loaded from state file
+level=debug msg=      Using Base Domain loaded from state file
+level=debug msg=      Loading Cluster Name...
+level=debug msg=        Loading Base Domain...
+level=debug msg=        Loading Platform...
+level=debug msg=      Using Cluster Name loaded from state file
+level=debug msg=      Loading Networking...
+level=debug msg=        Loading Platform...
+level=debug msg=      Using Networking loaded from state file
+level=debug msg=      Loading Pull Secret...
+level=debug msg=      Using Pull Secret loaded from state file
+level=debug msg=      Loading Platform...
+level=debug msg=    Using Install Config loaded from state file
+level=debug msg=  Using Cluster ID loaded from state file
+level=debug msg=  Loading Install Config...
+level=debug msg=  Loading Bootstrap Ignition Config...
+level=debug msg=    Loading Ironic bootstrap credentials...
+level=debug msg=    Loading Install Config...
+level=debug msg=    Loading Kubeconfig Admin Internal Client...
+level=debug msg=      Loading Certificate (admin-kubeconfig-client)...
+level=debug msg=        Loading Certificate (admin-kubeconfig-signer)...
+level=debug msg=      Loading Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=        Loading Certificate (kube-apiserver-localhost-ca-bundle)...
+level=debug msg=          Loading Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=        Loading Certificate (kube-apiserver-service-network-ca-bundle)...
+level=debug msg=          Loading Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=        Loading Certificate (kube-apiserver-lb-ca-bundle)...
+level=debug msg=          Loading Certificate (kube-apiserver-lb-signer)...
+level=debug msg=      Loading Install Config...
+level=debug msg=    Loading Kubeconfig Kubelet...
+level=debug msg=      Loading Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=      Loading Certificate (kubelet-client)...
+level=debug msg=        Loading Certificate (kubelet-bootstrap-kubeconfig-signer)...
+level=debug msg=      Loading Install Config...
+level=debug msg=    Loading Kubeconfig Admin Client (Loopback)...
+level=debug msg=      Loading Certificate (admin-kubeconfig-client)...
+level=debug msg=      Loading Certificate (kube-apiserver-localhost-ca-bundle)...
+level=debug msg=      Loading Install Config...
+level=debug msg=    Loading Master Ignition Customization Check...
+level=debug msg=      Loading Install Config...
+level=debug msg=      Loading Root CA...
+level=debug msg=      Using Root CA loaded from state file
+level=debug msg=      Loading Master Ignition Config...
+level=debug msg=        Loading Install Config...
+level=debug msg=        Loading Root CA...
+level=debug msg=      Using Master Ignition Config loaded from state file
+level=debug msg=    Loading Worker Ignition Customization Check...
+level=debug msg=      Loading Install Config...
+level=debug msg=      Loading Root CA...
+level=debug msg=      Loading Worker Ignition Config...
+level=debug msg=        Loading Install Config...
+level=debug msg=        Loading Root CA...
+level=debug msg=      Using Worker Ignition Config loaded from state file
+level=debug msg=    Loading Master Machines...
+level=debug msg=      Loading Cluster ID...
+level=debug msg=      Loading Platform Credentials Check...
+level=debug msg=        Loading Install Config...
+level=debug msg=      Using Platform Credentials Check loaded from state file
+level=debug msg=      Loading Install Config...
+level=debug msg=      Loading Image...
+level=debug msg=        Loading Install Config...
+level=debug msg=      Using Image loaded from state file
+level=debug msg=      Loading Master Ignition Config...
+level=debug msg=    Loading Master Machines from both state file and target directory
+level=debug msg=    Using Master Machines loaded from target directory
+level=debug msg=    Loading Worker Machines...
+level=debug msg=      Loading Cluster ID...
+level=debug msg=      Loading Platform Credentials Check...
+level=debug msg=      Loading Install Config...
+level=debug msg=      Loading Image...
+level=debug msg=      Loading Worker Ignition Config...
+level=debug msg=    Loading Worker Machines from both state file and target directory
+level=debug msg=    Using Worker Machines loaded from target directory
+level=debug msg=    Loading Common Manifests...
+level=debug msg=      Loading Cluster ID...
+level=debug msg=      Loading Install Config...
+level=debug msg=      Loading Ingress Config...
+level=debug msg=        Loading Install Config...
+level=debug msg=      Using Ingress Config loaded from state file
+level=debug msg=      Loading DNS Config...
+level=debug msg=        Loading Install Config...
+level=debug msg=        Loading Cluster ID...
+level=debug msg=        Loading Platform Credentials Check...
+level=debug msg=      Using DNS Config loaded from state file
+level=debug msg=      Loading Infrastructure Config...
+level=debug msg=        Loading Cluster ID...
+level=debug msg=        Loading Install Config...
+level=debug msg=        Loading Cloud Provider Config...
+level=debug msg=          Loading Install Config...
+level=debug msg=          Loading Cluster ID...
+level=debug msg=          Loading Platform Credentials Check...
+level=debug msg=        Using Cloud Provider Config loaded from state file
+level=debug msg=        Loading Additional Trust Bundle Config...
+level=debug msg=          Loading Install Config...
+level=debug msg=        Using Additional Trust Bundle Config loaded from state file
+level=debug msg=      Using Infrastructure Config loaded from state file
+level=debug msg=      Loading Network Config...
+level=debug msg=        Loading Install Config...
+level=debug msg=        Loading Network CRDs...
+level=debug msg=        Using Network CRDs loaded from state file
+level=debug msg=      Using Network Config loaded from state file
+level=debug msg=      Loading Proxy Config...
+level=debug msg=        Loading Install Config...
+level=debug msg=        Loading Network Config...
+level=debug msg=      Using Proxy Config loaded from state file
+level=debug msg=      Loading Scheduler Config...
+level=debug msg=        Loading Install Config...
+level=debug msg=      Using Scheduler Config loaded from state file
+level=debug msg=      Loading Image Content Source Policy...
+level=debug msg=        Loading Install Config...
+level=debug msg=      Using Image Content Source Policy loaded from state file
+level=debug msg=      Loading Root CA...
+level=debug msg=      Loading Certificate (mcs)...
+level=debug msg=        Loading Root CA...
+level=debug msg=        Loading Install Config...
+level=debug msg=      Using Certificate (mcs) loaded from state file
+level=debug msg=      Loading CVOOverrides...
+level=debug msg=      Using CVOOverrides loaded from state file
+level=debug msg=      Loading KubeCloudConfig...
+level=debug msg=      Using KubeCloudConfig loaded from state file
+level=debug msg=      Loading KubeSystemConfigmapRootCA...
+level=debug msg=      Using KubeSystemConfigmapRootCA loaded from state file
+level=debug msg=      Loading MachineConfigServerTLSSecret...
+level=debug msg=      Using MachineConfigServerTLSSecret loaded from state file
+level=debug msg=      Loading OpenshiftConfigSecretPullSecret...
+level=debug msg=      Using OpenshiftConfigSecretPullSecret loaded from state file
+level=debug msg=    Loading Common Manifests from both state file and target directory
+level=debug msg=    Using Common Manifests loaded from target directory
+level=debug msg=    Loading Openshift Manifests...
+level=debug msg=      Loading Install Config...
+level=debug msg=      Loading Cluster ID...
+level=debug msg=      Loading Kubeadmin Password...
+level=debug msg=      Using Kubeadmin Password loaded from state file
+level=debug msg=      Loading OpenShift Install (Manifests)...
+level=debug msg=      Loading OpenShift Install (Manifests) from both state file and target directory
+level=debug msg=      On-disk OpenShift Install (Manifests) matches asset in state file
+level=debug msg=      Using OpenShift Install (Manifests) loaded from state file
+level=debug msg=      Loading CloudCredsSecret...
+level=debug msg=      Using CloudCredsSecret loaded from state file
+level=debug msg=      Loading KubeadminPasswordSecret...
+level=debug msg=      Using KubeadminPasswordSecret loaded from state file
+level=debug msg=      Loading RoleCloudCredsSecretReader...
+level=debug msg=      Using RoleCloudCredsSecretReader loaded from state file
+level=debug msg=      Loading Baremetal Config CR...
+level=debug msg=      Using Baremetal Config CR loaded from state file
+level=debug msg=      Loading Image...
+level=debug msg=      Loading AzureCloudProviderSecret...
+level=debug msg=      Using AzureCloudProviderSecret loaded from state file
+level=debug msg=    Loading Openshift Manifests from both state file and target directory
+level=debug msg=    On-disk Openshift Manifests matches asset in state file
+level=debug msg=    Using Openshift Manifests loaded from state file
+level=debug msg=    Loading Proxy Config...
+level=debug msg=    Loading Certificate (admin-kubeconfig-ca-bundle)...
+level=debug msg=      Loading Certificate (admin-kubeconfig-signer)...
+level=debug msg=    Loading Certificate (aggregator)...
+level=debug msg=    Loading Certificate (aggregator-ca-bundle)...
+level=debug msg=      Loading Certificate (aggregator-signer)...
+level=debug msg=    Loading Certificate (system:kube-apiserver-proxy)...
+level=debug msg=      Loading Certificate (aggregator-signer)...
+level=debug msg=    Loading Certificate (aggregator-signer)...
+level=debug msg=    Loading Certificate (system:kube-apiserver-proxy)...
+level=debug msg=      Loading Certificate (aggregator)...
+level=debug msg=    Loading Bootstrap SSH Key Pair...
+level=debug msg=    Loading User-provided Service Account Signing key...
+level=debug msg=    Loading Cloud Provider CA Bundle...
+level=debug msg=      Loading Install Config...
+level=debug msg=    Loading Certificate (journal-gatewayd)...
+level=debug msg=      Loading Root CA...
+level=debug msg=    Loading Certificate (kube-apiserver-lb-ca-bundle)...
+level=debug msg=    Loading Certificate (kube-apiserver-external-lb-server)...
+level=debug msg=      Loading Certificate (kube-apiserver-lb-signer)...
+level=debug msg=      Loading Install Config...
+level=debug msg=    Loading Certificate (kube-apiserver-internal-lb-server)...
+level=debug msg=      Loading Certificate (kube-apiserver-lb-signer)...
+level=debug msg=      Loading Install Config...
+level=debug msg=    Loading Certificate (kube-apiserver-lb-signer)...
+level=debug msg=    Loading Certificate (kube-apiserver-localhost-ca-bundle)...
+level=debug msg=    Loading Certificate (kube-apiserver-localhost-server)...
+level=debug msg=      Loading Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=    Loading Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=    Loading Certificate (kube-apiserver-service-network-ca-bundle)...
+level=debug msg=    Loading Certificate (kube-apiserver-service-network-server)...
+level=debug msg=      Loading Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=      Loading Install Config...
+level=debug msg=    Loading Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=    Loading Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=    Loading Certificate (kube-apiserver-complete-client-ca-bundle)...
+level=debug msg=      Loading Certificate (admin-kubeconfig-ca-bundle)...
+level=debug msg=      Loading Certificate (kubelet-client-ca-bundle)...
+level=debug msg=        Loading Certificate (kubelet-signer)...
+level=debug msg=      Loading Certificate (kube-control-plane-ca-bundle)...
+level=debug msg=        Loading Certificate (kube-control-plane-signer)...
+level=debug msg=        Loading Certificate (kube-apiserver-lb-signer)...
+level=debug msg=        Loading Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=        Loading Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=      Loading Certificate (kube-apiserver-to-kubelet-ca-bundle)...
+level=debug msg=        Loading Certificate (kube-apiserver-to-kubelet-signer)...
+level=debug msg=      Loading Certificate (kubelet-bootstrap-kubeconfig-ca-bundle)...
+level=debug msg=        Loading Certificate (kubelet-bootstrap-kubeconfig-signer)...
+level=debug msg=    Loading Certificate (kube-apiserver-to-kubelet-ca-bundle)...
+level=debug msg=    Loading Certificate (kube-apiserver-to-kubelet-client)...
+level=debug msg=      Loading Certificate (kube-apiserver-to-kubelet-signer)...
+level=debug msg=    Loading Certificate (kube-apiserver-to-kubelet-signer)...
+level=debug msg=    Loading Certificate (kube-control-plane-ca-bundle)...
+level=debug msg=    Loading Certificate (kube-control-plane-kube-controller-manager-client)...
+level=debug msg=      Loading Certificate (kube-control-plane-signer)...
+level=debug msg=    Loading Certificate (kube-control-plane-kube-scheduler-client)...
+level=debug msg=      Loading Certificate (kube-control-plane-signer)...
+level=debug msg=    Loading Certificate (kube-control-plane-signer)...
+level=debug msg=    Loading Certificate (kubelet-bootstrap-kubeconfig-ca-bundle)...
+level=debug msg=    Loading Certificate (kubelet-client-ca-bundle)...
+level=debug msg=    Loading Certificate (kubelet-client)...
+level=debug msg=    Loading Certificate (kubelet-signer)...
+level=debug msg=    Loading Certificate (kubelet-serving-ca-bundle)...
+level=debug msg=      Loading Certificate (kubelet-signer)...
+level=debug msg=    Loading Certificate (mcs)...
+level=debug msg=    Loading Root CA...
+level=debug msg=    Loading Key Pair (service-account.pub)...
+level=debug msg=    Loading Release Image Pull Spec...
+level=debug msg=    Loading Image...
+level=debug msg=    Loading CVO Ignore...
+level=debug msg=      Loading Common Manifests...
+level=debug msg=      Loading Openshift Manifests...
+level=debug msg=  Fetching Cluster ID...
+level=debug msg=  Reusing previously-fetched Cluster ID
+level=debug msg=  Fetching Install Config...
+level=debug msg=  Reusing previously-fetched Install Config
+level=debug msg=  Fetching Bootstrap Ignition Config...
+level=debug msg=    Fetching Ironic bootstrap credentials...
+level=debug msg=    Generating Ironic bootstrap credentials...
+level=debug msg=    Fetching Install Config...
+level=debug msg=    Reusing previously-fetched Install Config
+level=debug msg=    Fetching Kubeconfig Admin Internal Client...
+level=debug msg=      Fetching Certificate (admin-kubeconfig-client)...
+level=debug msg=        Fetching Certificate (admin-kubeconfig-signer)...
+level=debug msg=        Generating Certificate (admin-kubeconfig-signer)...
+level=debug msg=      Generating Certificate (admin-kubeconfig-client)...
+level=debug msg=      Fetching Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=        Fetching Certificate (kube-apiserver-localhost-ca-bundle)...
+level=debug msg=          Fetching Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=          Generating Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=        Generating Certificate (kube-apiserver-localhost-ca-bundle)...
+level=debug msg=        Fetching Certificate (kube-apiserver-service-network-ca-bundle)...
+level=debug msg=          Fetching Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=          Generating Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=        Generating Certificate (kube-apiserver-service-network-ca-bundle)...
+level=debug msg=        Fetching Certificate (kube-apiserver-lb-ca-bundle)...
+level=debug msg=          Fetching Certificate (kube-apiserver-lb-signer)...
+level=debug msg=          Generating Certificate (kube-apiserver-lb-signer)...
+level=debug msg=        Generating Certificate (kube-apiserver-lb-ca-bundle)...
+level=debug msg=      Generating Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=    Generating Kubeconfig Admin Internal Client...
+level=debug msg=    Fetching Kubeconfig Kubelet...
+level=debug msg=      Fetching Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-apiserver-complete-server-ca-bundle)
+level=debug msg=      Fetching Certificate (kubelet-client)...
+level=debug msg=        Fetching Certificate (kubelet-bootstrap-kubeconfig-signer)...
+level=debug msg=        Generating Certificate (kubelet-bootstrap-kubeconfig-signer)...
+level=debug msg=      Generating Certificate (kubelet-client)...
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=    Generating Kubeconfig Kubelet...
+level=debug msg=    Fetching Kubeconfig Admin Client (Loopback)...
+level=debug msg=      Fetching Certificate (admin-kubeconfig-client)...
+level=debug msg=      Reusing previously-fetched Certificate (admin-kubeconfig-client)
+level=debug msg=      Fetching Certificate (kube-apiserver-localhost-ca-bundle)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-apiserver-localhost-ca-bundle)
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=    Generating Kubeconfig Admin Client (Loopback)...
+level=debug msg=    Fetching Master Ignition Customization Check...
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=      Fetching Root CA...
+level=debug msg=      Reusing previously-fetched Root CA
+level=debug msg=      Fetching Master Ignition Config...
+level=debug msg=      Reusing previously-fetched Master Ignition Config
+level=debug msg=    Generating Master Ignition Customization Check...
+level=debug msg=    Fetching Worker Ignition Customization Check...
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=      Fetching Root CA...
+level=debug msg=      Reusing previously-fetched Root CA
+level=debug msg=      Fetching Worker Ignition Config...
+level=debug msg=      Reusing previously-fetched Worker Ignition Config
+level=debug msg=    Generating Worker Ignition Customization Check...
+level=debug msg=    Fetching Master Machines...
+level=debug msg=    Reusing previously-fetched Master Machines
+level=debug msg=    Fetching Worker Machines...
+level=debug msg=    Reusing previously-fetched Worker Machines
+level=debug msg=    Fetching Common Manifests...
+level=debug msg=    Reusing previously-fetched Common Manifests
+level=debug msg=    Fetching Openshift Manifests...
+level=debug msg=    Reusing previously-fetched Openshift Manifests
+level=debug msg=    Fetching Proxy Config...
+level=debug msg=    Reusing previously-fetched Proxy Config
+level=debug msg=    Fetching Certificate (admin-kubeconfig-ca-bundle)...
+level=debug msg=      Fetching Certificate (admin-kubeconfig-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (admin-kubeconfig-signer)
+level=debug msg=    Generating Certificate (admin-kubeconfig-ca-bundle)...
+level=debug msg=    Fetching Certificate (aggregator)...
+level=debug msg=    Generating Certificate (aggregator)...
+level=debug msg=    Fetching Certificate (aggregator-ca-bundle)...
+level=debug msg=      Fetching Certificate (aggregator-signer)...
+level=debug msg=      Generating Certificate (aggregator-signer)...
+level=debug msg=    Generating Certificate (aggregator-ca-bundle)...
+level=debug msg=    Fetching Certificate (system:kube-apiserver-proxy)...
+level=debug msg=      Fetching Certificate (aggregator-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (aggregator-signer)
+level=debug msg=    Generating Certificate (system:kube-apiserver-proxy)...
+level=debug msg=    Fetching Certificate (aggregator-signer)...
+level=debug msg=    Reusing previously-fetched Certificate (aggregator-signer)
+level=debug msg=    Fetching Certificate (system:kube-apiserver-proxy)...
+level=debug msg=      Fetching Certificate (aggregator)...
+level=debug msg=      Reusing previously-fetched Certificate (aggregator)
+level=debug msg=    Generating Certificate (system:kube-apiserver-proxy)...
+level=debug msg=    Fetching Bootstrap SSH Key Pair...
+level=debug msg=    Generating Bootstrap SSH Key Pair...
+level=debug msg=Failed to marshal PKIX public key: %!s(<nil>)
+level=debug msg=    Fetching User-provided Service Account Signing key...
+level=debug msg=    Generating User-provided Service Account Signing key...
+level=debug msg=    Fetching Cloud Provider CA Bundle...
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=    Generating Cloud Provider CA Bundle...
+level=debug msg=    Fetching Certificate (journal-gatewayd)...
+level=debug msg=      Fetching Root CA...
+level=debug msg=      Reusing previously-fetched Root CA
+level=debug msg=    Generating Certificate (journal-gatewayd)...
+level=debug msg=    Fetching Certificate (kube-apiserver-lb-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-lb-ca-bundle)
+level=debug msg=    Fetching Certificate (kube-apiserver-external-lb-server)...
+level=debug msg=      Fetching Certificate (kube-apiserver-lb-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-apiserver-lb-signer)
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=    Generating Certificate (kube-apiserver-external-lb-server)...
+level=debug msg=    Fetching Certificate (kube-apiserver-internal-lb-server)...
+level=debug msg=      Fetching Certificate (kube-apiserver-lb-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-apiserver-lb-signer)
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=    Generating Certificate (kube-apiserver-internal-lb-server)...
+level=debug msg=    Fetching Certificate (kube-apiserver-lb-signer)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-lb-signer)
+level=debug msg=    Fetching Certificate (kube-apiserver-localhost-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-localhost-ca-bundle)
+level=debug msg=    Fetching Certificate (kube-apiserver-localhost-server)...
+level=debug msg=      Fetching Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-apiserver-localhost-signer)
+level=debug msg=    Generating Certificate (kube-apiserver-localhost-server)...
+level=debug msg=    Fetching Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-localhost-signer)
+level=debug msg=    Fetching Certificate (kube-apiserver-service-network-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-service-network-ca-bundle)
+level=debug msg=    Fetching Certificate (kube-apiserver-service-network-server)...
+level=debug msg=      Fetching Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-apiserver-service-network-signer)
+level=debug msg=      Fetching Install Config...
+level=debug msg=      Reusing previously-fetched Install Config
+level=debug msg=    Generating Certificate (kube-apiserver-service-network-server)...
+level=debug msg=    Fetching Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-service-network-signer)
+level=debug msg=    Fetching Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-complete-server-ca-bundle)
+level=debug msg=    Fetching Certificate (kube-apiserver-complete-client-ca-bundle)...
+level=debug msg=      Fetching Certificate (admin-kubeconfig-ca-bundle)...
+level=debug msg=      Reusing previously-fetched Certificate (admin-kubeconfig-ca-bundle)
+level=debug msg=      Fetching Certificate (kubelet-client-ca-bundle)...
+level=debug msg=        Fetching Certificate (kubelet-signer)...
+level=debug msg=        Generating Certificate (kubelet-signer)...
+level=debug msg=      Generating Certificate (kubelet-client-ca-bundle)...
+level=debug msg=      Fetching Certificate (kube-control-plane-ca-bundle)...
+level=debug msg=        Fetching Certificate (kube-control-plane-signer)...
+level=debug msg=        Generating Certificate (kube-control-plane-signer)...
+level=debug msg=        Fetching Certificate (kube-apiserver-lb-signer)...
+level=debug msg=        Reusing previously-fetched Certificate (kube-apiserver-lb-signer)
+level=debug msg=        Fetching Certificate (kube-apiserver-localhost-signer)...
+level=debug msg=        Reusing previously-fetched Certificate (kube-apiserver-localhost-signer)
+level=debug msg=        Fetching Certificate (kube-apiserver-service-network-signer)...
+level=debug msg=        Reusing previously-fetched Certificate (kube-apiserver-service-network-signer)
+level=debug msg=      Generating Certificate (kube-control-plane-ca-bundle)...
+level=debug msg=      Fetching Certificate (kube-apiserver-to-kubelet-ca-bundle)...
+level=debug msg=        Fetching Certificate (kube-apiserver-to-kubelet-signer)...
+level=debug msg=        Generating Certificate (kube-apiserver-to-kubelet-signer)...
+level=debug msg=      Generating Certificate (kube-apiserver-to-kubelet-ca-bundle)...
+level=debug msg=      Fetching Certificate (kubelet-bootstrap-kubeconfig-ca-bundle)...
+level=debug msg=        Fetching Certificate (kubelet-bootstrap-kubeconfig-signer)...
+level=debug msg=        Reusing previously-fetched Certificate (kubelet-bootstrap-kubeconfig-signer)
+level=debug msg=      Generating Certificate (kubelet-bootstrap-kubeconfig-ca-bundle)...
+level=debug msg=    Generating Certificate (kube-apiserver-complete-client-ca-bundle)...
+level=debug msg=    Fetching Certificate (kube-apiserver-to-kubelet-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-to-kubelet-ca-bundle)
+level=debug msg=    Fetching Certificate (kube-apiserver-to-kubelet-client)...
+level=debug msg=      Fetching Certificate (kube-apiserver-to-kubelet-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-apiserver-to-kubelet-signer)
+level=debug msg=    Generating Certificate (kube-apiserver-to-kubelet-client)...
+level=debug msg=    Fetching Certificate (kube-apiserver-to-kubelet-signer)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-apiserver-to-kubelet-signer)
+level=debug msg=    Fetching Certificate (kube-control-plane-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-control-plane-ca-bundle)
+level=debug msg=    Fetching Certificate (kube-control-plane-kube-controller-manager-client)...
+level=debug msg=      Fetching Certificate (kube-control-plane-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-control-plane-signer)
+level=debug msg=    Generating Certificate (kube-control-plane-kube-controller-manager-client)...
+level=debug msg=    Fetching Certificate (kube-control-plane-kube-scheduler-client)...
+level=debug msg=      Fetching Certificate (kube-control-plane-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kube-control-plane-signer)
+level=debug msg=    Generating Certificate (kube-control-plane-kube-scheduler-client)...
+level=debug msg=    Fetching Certificate (kube-control-plane-signer)...
+level=debug msg=    Reusing previously-fetched Certificate (kube-control-plane-signer)
+level=debug msg=    Fetching Certificate (kubelet-bootstrap-kubeconfig-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kubelet-bootstrap-kubeconfig-ca-bundle)
+level=debug msg=    Fetching Certificate (kubelet-client-ca-bundle)...
+level=debug msg=    Reusing previously-fetched Certificate (kubelet-client-ca-bundle)
+level=debug msg=    Fetching Certificate (kubelet-client)...
+level=debug msg=    Reusing previously-fetched Certificate (kubelet-client)
+level=debug msg=    Fetching Certificate (kubelet-signer)...
+level=debug msg=    Reusing previously-fetched Certificate (kubelet-signer)
+level=debug msg=    Fetching Certificate (kubelet-serving-ca-bundle)...
+level=debug msg=      Fetching Certificate (kubelet-signer)...
+level=debug msg=      Reusing previously-fetched Certificate (kubelet-signer)
+level=debug msg=    Generating Certificate (kubelet-serving-ca-bundle)...
+level=debug msg=    Fetching Certificate (mcs)...
+level=debug msg=    Reusing previously-fetched Certificate (mcs)
+level=debug msg=    Fetching Root CA...
+level=debug msg=    Reusing previously-fetched Root CA
+level=debug msg=    Fetching Key Pair (service-account.pub)...
+level=debug msg=    Generating Key Pair (service-account.pub)...
+level=debug msg=Failed to marshal PKIX public key: %!s(<nil>)
+level=debug msg=    Fetching Release Image Pull Spec...
+level=debug msg=    Generating Release Image Pull Spec...
+level=debug msg=Using internal constant for release image quay.io/openshift-release-dev/ocp-release@sha256:e86e058f7f66a687e273792f2e4ec70f3cc43ec9d2894bebee5caf5c4d4851a3
+level=debug msg=    Fetching Image...
+level=debug msg=    Reusing previously-fetched Image
+level=debug msg=    Fetching CVO Ignore...
+level=debug msg=      Fetching Common Manifests...
+level=debug msg=      Reusing previously-fetched Common Manifests
+level=debug msg=      Fetching Openshift Manifests...
+level=debug msg=      Reusing previously-fetched Openshift Manifests
+level=debug msg=    Generating CVO Ignore...
+level=debug msg=  Generating Bootstrap Ignition Config...
+level=debug msg=Generating Metadata...
+level=info msg=Consuming Worker Machines from target directory
+level=debug msg=Purging asset "Worker Machines" from disk
+level=info msg=Consuming Openshift Manifests from target directory
+level=debug msg=Purging asset "Openshift Manifests" from disk
+level=info msg=Consuming Master Machines from target directory
+level=debug msg=Purging asset "Master Machines" from disk
+level=info msg=Consuming OpenShift Install (Manifests) from target directory
+level=debug msg=Purging asset "OpenShift Install (Manifests)" from disk
+level=info msg=Consuming Common Manifests from target directory
+level=debug msg=Purging asset "Common Manifests" from disk
+level=debug msg=Fetching Master Ignition Customization Check...
+level=debug msg=Reusing previously-fetched Master Ignition Customization Check
+level=debug msg=Fetching Worker Ignition Customization Check...
+level=debug msg=Reusing previously-fetched Worker Ignition Customization Check
+level=debug msg=Fetching Terraform Variables...
+level=debug msg=Loading Terraform Variables...
+level=debug msg=  Loading Cluster ID...
+level=debug msg=  Loading Install Config...
+level=debug msg=  Loading Image...
+level=debug msg=  Loading BootstrapImage...
+level=debug msg=    Loading Install Config...
+level=debug msg=    Loading Image...
+level=debug msg=  Loading Bootstrap Ignition Config...
+level=debug msg=  Loading Master Ignition Config...
+level=debug msg=  Loading Master Machines...
+level=debug msg=  Loading Worker Machines...
+level=debug msg=  Loading Ironic bootstrap credentials...
+level=debug msg=  Loading Platform Provisioning Check...
+level=debug msg=    Loading Install Config...
+level=debug msg=  Loading Common Manifests...
+level=debug msg=  Fetching Cluster ID...
+level=debug msg=  Reusing previously-fetched Cluster ID
+level=debug msg=  Fetching Install Config...
+level=debug msg=  Reusing previously-fetched Install Config
+level=debug msg=  Fetching Image...
+level=debug msg=  Reusing previously-fetched Image
+level=debug msg=  Fetching BootstrapImage...
+level=debug msg=    Fetching Install Config...
+level=debug msg=    Reusing previously-fetched Install Config
+level=debug msg=    Fetching Image...
+level=debug msg=    Reusing previously-fetched Image
+level=debug msg=  Generating BootstrapImage...
+level=debug msg=  Fetching Bootstrap Ignition Config...
+level=debug msg=  Reusing previously-fetched Bootstrap Ignition Config
+level=debug msg=  Fetching Master Ignition Config...
+level=debug msg=  Reusing previously-fetched Master Ignition Config
+level=debug msg=  Fetching Master Machines...
+level=debug msg=  Reusing previously-fetched Master Machines
+level=debug msg=  Fetching Worker Machines...
+level=debug msg=  Reusing previously-fetched Worker Machines
+level=debug msg=  Fetching Ironic bootstrap credentials...
+level=debug msg=  Reusing previously-fetched Ironic bootstrap credentials
+level=debug msg=  Fetching Platform Provisioning Check...
+level=debug msg=    Fetching Install Config...
+level=debug msg=    Reusing previously-fetched Install Config
+level=debug msg=  Generating Platform Provisioning Check...
+level=debug msg=  Fetching Common Manifests...
+level=debug msg=  Reusing previously-fetched Common Manifests
+level=debug msg=Generating Terraform Variables...
+level=debug msg=Fetching Kubeconfig Admin Client...
+level=debug msg=Loading Kubeconfig Admin Client...
+level=debug msg=  Loading Certificate (admin-kubeconfig-client)...
+level=debug msg=  Loading Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=  Loading Install Config...
+level=debug msg=  Fetching Certificate (admin-kubeconfig-client)...
+level=debug msg=  Reusing previously-fetched Certificate (admin-kubeconfig-client)
+level=debug msg=  Fetching Certificate (kube-apiserver-complete-server-ca-bundle)...
+level=debug msg=  Reusing previously-fetched Certificate (kube-apiserver-complete-server-ca-bundle)
+level=debug msg=  Fetching Install Config...
+level=debug msg=  Reusing previously-fetched Install Config
+level=debug msg=Generating Kubeconfig Admin Client...
+level=debug msg=Fetching Kubeadmin Password...
+level=debug msg=Reusing previously-fetched Kubeadmin Password
+level=debug msg=Fetching Certificate (journal-gatewayd)...
+level=debug msg=Reusing previously-fetched Certificate (journal-gatewayd)
+level=debug msg=Fetching Cluster...
+level=debug msg=Loading Cluster...
+level=debug msg=  Loading Cluster ID...
+level=debug msg=  Loading Install Config...
+level=debug msg=  Loading Platform Credentials Check...
+level=debug msg=  Loading Platform Permissions Check...
+level=debug msg=    Loading Install Config...
+level=debug msg=  Loading Platform Provisioning Check...
+level=debug msg=  Loading Platform Quota Check...
+level=debug msg=    Loading Install Config...
+level=debug msg=    Loading Master Machines...
+level=debug msg=    Loading Worker Machines...
+level=debug msg=  Loading Terraform Variables...
+level=debug msg=  Loading Kubeadmin Password...
+level=debug msg=  Fetching Cluster ID...
+level=debug msg=  Reusing previously-fetched Cluster ID
+level=debug msg=  Fetching Install Config...
+level=debug msg=  Reusing previously-fetched Install Config
+level=debug msg=  Fetching Platform Credentials Check...
+level=debug msg=  Reusing previously-fetched Platform Credentials Check
+level=debug msg=  Fetching Platform Permissions Check...
+level=debug msg=    Fetching Install Config...
+level=debug msg=    Reusing previously-fetched Install Config
+level=debug msg=  Generating Platform Permissions Check...
+level=debug msg=  Fetching Platform Provisioning Check...
+level=debug msg=  Reusing previously-fetched Platform Provisioning Check
+level=debug msg=  Fetching Platform Quota Check...
+level=debug msg=    Fetching Install Config...
+level=debug msg=    Reusing previously-fetched Install Config
+level=debug msg=    Fetching Master Machines...
+level=debug msg=    Reusing previously-fetched Master Machines
+level=debug msg=    Fetching Worker Machines...
+level=debug msg=    Reusing previously-fetched Worker Machines
+level=debug msg=  Generating Platform Quota Check...
+level=debug msg=  Fetching Terraform Variables...
+level=debug msg=  Reusing previously-fetched Terraform Variables
+level=debug msg=  Fetching Kubeadmin Password...
+level=debug msg=  Reusing previously-fetched Kubeadmin Password
+level=debug msg=Generating Cluster...
+level=debug msg=creating /root/openshift/terraform/bin/terraform file
+level=debug msg=creating /root/openshift/terraform/plugins/openshift/local/nutanix directory
+level=debug msg=creating /root/openshift/terraform/plugins/openshift/local/nutanix/terraform-provider-nutanix_1.0.0_linux_amd64.zip file
+level=info msg=Creating infrastructure resources...
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform version -json
+level=debug msg={
+level=debug msg=  "terraform_version": "1.0.11",
+level=debug msg=  "platform": "linux_amd64",
+level=debug msg=  "provider_selections": {},
+level=debug msg=  "terraform_outdated": true
+level=debug msg=}
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform init -no-color -force-copy -input=false -backend=true -get=true -upgrade=false -plugin-dir=/root/openshift/terraform/plugins
+level=debug
+level=debug msg=Initializing the backend...
+level=debug
+level=debug msg=Initializing provider plugins...
+level=debug msg=- Finding latest version of openshift/local/nutanix...
+level=debug msg=- Installing openshift/local/nutanix v1.0.0...
+level=debug msg=- Installed openshift/local/nutanix v1.0.0 (unauthenticated)
+level=debug
+level=debug msg=Terraform has created a lock file .terraform.lock.hcl to record the provider
+level=debug msg=selections it made above. Include this file in your version control repository
+level=debug msg=so that Terraform can guarantee to make the same selections by default when
+level=debug msg=you run "terraform init" in the future.
+level=debug
+level=debug msg=Terraform has been successfully initialized!
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform apply -no-color -auto-approve -input=false -var-file=/tmp/openshift-install-cluster-670776615/terraform.tfvars.json -var-file=/tmp/openshift-install-cluster-670776615/terraform.platform.auto.tfvars.json -lock=true -parallelism=10 -refresh=true
+level=debug
+level=debug msg=Terraform used the selected providers to generate the following execution
+level=debug msg=plan. Resource actions are indicated with the following symbols:
+level=debug msg=  + create
+level=debug
+level=debug msg=Terraform will perform the following actions:
+level=debug
+level=debug msg=  # nutanix_category_key.ocp_category_key will be created
+level=debug msg=  + resource "nutanix_category_key" "ocp_category_key" {
+level=debug msg=      + api_version    = (known after apply)
+level=debug msg=      + description    = "Openshift Cluster Category Key"
+level=debug msg=      + id             = (known after apply)
+level=debug msg=      + name           = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=      + system_defined = (known after apply)
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_category_value.ocp_category_value_owned will be created
+level=debug msg=  + resource "nutanix_category_value" "ocp_category_value_owned" {
+level=debug msg=      + api_version    = (known after apply)
+level=debug msg=      + description    = "Openshift Cluster Category Value: resources owned by the cluster"
+level=debug msg=      + id             = (known after apply)
+level=debug msg=      + name           = (known after apply)
+level=debug msg=      + system_defined = (known after apply)
+level=debug msg=      + value          = "owned"
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_category_value.ocp_category_value_shared will be created
+level=debug msg=  + resource "nutanix_category_value" "ocp_category_value_shared" {
+level=debug msg=      + api_version    = (known after apply)
+level=debug msg=      + description    = "Openshift Cluster Category Value: resources used but not owned by the cluster"
+level=debug msg=      + id             = (known after apply)
+level=debug msg=      + name           = (known after apply)
+level=debug msg=      + system_defined = (known after apply)
+level=debug msg=      + value          = "shared"
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_image.rhcos will be created
+level=debug msg=  + resource "nutanix_image" "rhcos" {
+level=debug msg=      + api_version                    = (known after apply)
+level=debug msg=      + architecture                   = (known after apply)
+level=debug msg=      + availability_zone_reference    = (known after apply)
+level=debug msg=      + checksum                       = (known after apply)
+level=debug msg=      + cluster_name                   = (known after apply)
+level=debug msg=      + cluster_uuid                   = (known after apply)
+level=debug msg=      + current_cluster_reference_list = (known after apply)
+level=debug msg=      + description                    = "Created By OpenShift Installer"
+level=debug msg=      + id                             = (known after apply)
+level=debug msg=      + image_type                     = (known after apply)
+level=debug msg=      + metadata                       = (known after apply)
+level=debug msg=      + name                           = "ocp1ipi-gp8tk-rhcos"
+level=debug msg=      + owner_reference                = (known after apply)
+level=debug msg=      + retrieval_uri_list             = (known after apply)
+level=debug msg=      + size_bytes                     = (known after apply)
+level=debug msg=      + source_path                    = (known after apply)
+level=debug msg=      + source_uri                     = "https://rhcos.mirror.openshift.com/art/storage/releases/rhcos-4.11/411.86.202210041459-0/x86_64/rhcos-411.86.202210041459-0-nutanix.x86_64.qcow2?sha256="
+level=debug msg=      + state                          = (known after apply)
+level=debug msg=      + version                        = (known after apply)
+level=debug
+level=debug msg=      + categories {
+level=debug msg=          + name  = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=          + value = "owned"
+level=debug msg=        }
+level=debug
+level=debug msg=      + cluster_references {
+level=debug msg=          + kind = (known after apply)
+level=debug msg=          + name = (known after apply)
+level=debug msg=          + uuid = (known after apply)
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_virtual_machine.vm_master[0] will be created
+level=debug msg=  + resource "nutanix_virtual_machine" "vm_master" {
+level=debug msg=      + api_version                                      = (known after apply)
+level=debug msg=      + availability_zone_reference                      = (known after apply)
+level=debug msg=      + boot_device_disk_address                         = (known after apply)
+level=debug msg=      + boot_device_mac_address                          = (known after apply)
+level=debug msg=      + boot_device_order_list                           = [
+level=debug msg=          + "DISK",
+level=debug msg=          + "CDROM",
+level=debug msg=          + "NETWORK",
+level=debug msg=        ]
+level=debug msg=      + boot_type                                        = (known after apply)
+level=debug msg=      + cloud_init_cdrom_uuid                            = (known after apply)
+level=debug msg=      + cluster_name                                     = (known after apply)
+level=debug msg=      + cluster_uuid                                     = "0005efbd-211a-3d87-62af-9440c97b55c4"
+level=debug msg=      + description                                      = "Created By OpenShift Installer"
+level=debug msg=      + enable_cpu_passthrough                           = false
+level=debug msg=      + enable_script_exec                               = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_custom_key_values = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_meta_data         = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_user_data         = (sensitive)
+level=debug msg=      + guest_customization_is_overridable               = (known after apply)
+level=debug msg=      + guest_customization_sysprep                      = (known after apply)
+level=debug msg=      + guest_customization_sysprep_custom_key_values    = (known after apply)
+level=debug msg=      + guest_os_id                                      = (known after apply)
+level=debug msg=      + hardware_clock_timezone                          = (known after apply)
+level=debug msg=      + host_reference                                   = (known after apply)
+level=debug msg=      + hypervisor_type                                  = (known after apply)
+level=debug msg=      + id                                               = (known after apply)
+level=debug msg=      + is_vcpu_hard_pinned                              = false
+level=debug msg=      + machine_type                                     = (known after apply)
+level=debug msg=      + memory_size_mib                                  = 16384
+level=debug msg=      + metadata                                         = (known after apply)
+level=debug msg=      + name                                             = "ocp1ipi-gp8tk-master-0"
+level=debug msg=      + ngt_credentials                                  = (known after apply)
+level=debug msg=      + ngt_enabled_capability_list                      = (known after apply)
+level=debug msg=      + nic_list_status                                  = (known after apply)
+level=debug msg=      + num_sockets                                      = 8
+level=debug msg=      + num_vcpus_per_socket                             = 1
+level=debug msg=      + num_vnuma_nodes                                  = (known after apply)
+level=debug msg=      + nutanix_guest_tools                              = (known after apply)
+level=debug msg=      + owner_reference                                  = (known after apply)
+level=debug msg=      + parent_reference                                 = (known after apply)
+level=debug msg=      + power_state                                      = (known after apply)
+level=debug msg=      + power_state_mechanism                            = (known after apply)
+level=debug msg=      + project_reference                                = (known after apply)
+level=debug msg=      + should_fail_on_script_failure                    = (known after apply)
+level=debug msg=      + state                                            = (known after apply)
+level=debug msg=      + use_hot_add                                      = true
+level=debug msg=      + vga_console_enabled                              = (known after apply)
+level=debug
+level=debug msg=      + categories {
+level=debug msg=          + name  = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=          + value = "owned"
+level=debug msg=        }
+level=debug
+level=debug msg=      + disk_list {
+level=debug msg=          + data_source_reference  = (known after apply)
+level=debug msg=          + disk_size_bytes        = 0
+level=debug msg=          + disk_size_mib          = 122880
+level=debug msg=          + uuid                   = (known after apply)
+level=debug msg=          + volume_group_reference = (known after apply)
+level=debug
+level=debug msg=          + device_properties {
+level=debug msg=              + device_type  = "DISK"
+level=debug msg=              + disk_address = {
+level=debug msg=                  + "adapter_type" = "SCSI"
+level=debug msg=                  + "device_index" = "0"
+level=debug msg=                }
+level=debug msg=            }
+level=debug msg=        }
+level=debug
+level=debug msg=      + gpu_list {
+level=debug msg=          + device_id                 = (known after apply)
+level=debug msg=          + fraction                  = (known after apply)
+level=debug msg=          + frame_buffer_size_mib     = (known after apply)
+level=debug msg=          + guest_driver_version      = (known after apply)
+level=debug msg=          + mode                      = (known after apply)
+level=debug msg=          + name                      = (known after apply)
+level=debug msg=          + num_virtual_display_heads = (known after apply)
+level=debug msg=          + pci_address               = (known after apply)
+level=debug msg=          + uuid                      = (known after apply)
+level=debug msg=          + vendor                    = (known after apply)
+level=debug msg=        }
+level=debug
+level=debug msg=      + nic_list {
+level=debug msg=          + is_connected                     = "true"
+level=debug msg=          + mac_address                      = (known after apply)
+level=debug msg=          + model                            = (known after apply)
+level=debug msg=          + network_function_chain_reference = (known after apply)
+level=debug msg=          + network_function_nic_type        = (known after apply)
+level=debug msg=          + nic_type                         = (known after apply)
+level=debug msg=          + num_queues                       = (known after apply)
+level=debug msg=          + subnet_name                      = (known after apply)
+level=debug msg=          + subnet_uuid                      = "adaa1561-536c-4780-ad7b-cb2be4a2d407"
+level=debug msg=          + uuid                             = (known after apply)
+level=debug
+level=debug msg=          + ip_endpoint_list {
+level=debug msg=              + ip   = (known after apply)
+level=debug msg=              + type = (known after apply)
+level=debug msg=            }
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_virtual_machine.vm_master[1] will be created
+level=debug msg=  + resource "nutanix_virtual_machine" "vm_master" {
+level=debug msg=      + api_version                                      = (known after apply)
+level=debug msg=      + availability_zone_reference                      = (known after apply)
+level=debug msg=      + boot_device_disk_address                         = (known after apply)
+level=debug msg=      + boot_device_mac_address                          = (known after apply)
+level=debug msg=      + boot_device_order_list                           = [
+level=debug msg=          + "DISK",
+level=debug msg=          + "CDROM",
+level=debug msg=          + "NETWORK",
+level=debug msg=        ]
+level=debug msg=      + boot_type                                        = (known after apply)
+level=debug msg=      + cloud_init_cdrom_uuid                            = (known after apply)
+level=debug msg=      + cluster_name                                     = (known after apply)
+level=debug msg=      + cluster_uuid                                     = "0005efbd-211a-3d87-62af-9440c97b55c4"
+level=debug msg=      + description                                      = "Created By OpenShift Installer"
+level=debug msg=      + enable_cpu_passthrough                           = false
+level=debug msg=      + enable_script_exec                               = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_custom_key_values = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_meta_data         = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_user_data         = (sensitive)
+level=debug msg=      + guest_customization_is_overridable               = (known after apply)
+level=debug msg=      + guest_customization_sysprep                      = (known after apply)
+level=debug msg=      + guest_customization_sysprep_custom_key_values    = (known after apply)
+level=debug msg=      + guest_os_id                                      = (known after apply)
+level=debug msg=      + hardware_clock_timezone                          = (known after apply)
+level=debug msg=      + host_reference                                   = (known after apply)
+level=debug msg=      + hypervisor_type                                  = (known after apply)
+level=debug msg=      + id                                               = (known after apply)
+level=debug msg=      + is_vcpu_hard_pinned                              = false
+level=debug msg=      + machine_type                                     = (known after apply)
+level=debug msg=      + memory_size_mib                                  = 16384
+level=debug msg=      + metadata                                         = (known after apply)
+level=debug msg=      + name                                             = "ocp1ipi-gp8tk-master-1"
+level=debug msg=      + ngt_credentials                                  = (known after apply)
+level=debug msg=      + ngt_enabled_capability_list                      = (known after apply)
+level=debug msg=      + nic_list_status                                  = (known after apply)
+level=debug msg=      + num_sockets                                      = 8
+level=debug msg=      + num_vcpus_per_socket                             = 1
+level=debug msg=      + num_vnuma_nodes                                  = (known after apply)
+level=debug msg=      + nutanix_guest_tools                              = (known after apply)
+level=debug msg=      + owner_reference                                  = (known after apply)
+level=debug msg=      + parent_reference                                 = (known after apply)
+level=debug msg=      + power_state                                      = (known after apply)
+level=debug msg=      + power_state_mechanism                            = (known after apply)
+level=debug msg=      + project_reference                                = (known after apply)
+level=debug msg=      + should_fail_on_script_failure                    = (known after apply)
+level=debug msg=      + state                                            = (known after apply)
+level=debug msg=      + use_hot_add                                      = true
+level=debug msg=      + vga_console_enabled                              = (known after apply)
+level=debug
+level=debug msg=      + categories {
+level=debug msg=          + name  = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=          + value = "owned"
+level=debug msg=        }
+level=debug
+level=debug msg=      + disk_list {
+level=debug msg=          + data_source_reference  = (known after apply)
+level=debug msg=          + disk_size_bytes        = 0
+level=debug msg=          + disk_size_mib          = 122880
+level=debug msg=          + uuid                   = (known after apply)
+level=debug msg=          + volume_group_reference = (known after apply)
+level=debug
+level=debug msg=          + device_properties {
+level=debug msg=              + device_type  = "DISK"
+level=debug msg=              + disk_address = {
+level=debug msg=                  + "adapter_type" = "SCSI"
+level=debug msg=                  + "device_index" = "0"
+level=debug msg=                }
+level=debug msg=            }
+level=debug msg=        }
+level=debug
+level=debug msg=      + gpu_list {
+level=debug msg=          + device_id                 = (known after apply)
+level=debug msg=          + fraction                  = (known after apply)
+level=debug msg=          + frame_buffer_size_mib     = (known after apply)
+level=debug msg=          + guest_driver_version      = (known after apply)
+level=debug msg=          + mode                      = (known after apply)
+level=debug msg=          + name                      = (known after apply)
+level=debug msg=          + num_virtual_display_heads = (known after apply)
+level=debug msg=          + pci_address               = (known after apply)
+level=debug msg=          + uuid                      = (known after apply)
+level=debug msg=          + vendor                    = (known after apply)
+level=debug msg=        }
+level=debug
+level=debug msg=      + nic_list {
+level=debug msg=          + is_connected                     = "true"
+level=debug msg=          + mac_address                      = (known after apply)
+level=debug msg=          + model                            = (known after apply)
+level=debug msg=          + network_function_chain_reference = (known after apply)
+level=debug msg=          + network_function_nic_type        = (known after apply)
+level=debug msg=          + nic_type                         = (known after apply)
+level=debug msg=          + num_queues                       = (known after apply)
+level=debug msg=          + subnet_name                      = (known after apply)
+level=debug msg=          + subnet_uuid                      = "adaa1561-536c-4780-ad7b-cb2be4a2d407"
+level=debug msg=          + uuid                             = (known after apply)
+level=debug
+level=debug msg=          + ip_endpoint_list {
+level=debug msg=              + ip   = (known after apply)
+level=debug msg=              + type = (known after apply)
+level=debug msg=            }
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_virtual_machine.vm_master[2] will be created
+level=debug msg=  + resource "nutanix_virtual_machine" "vm_master" {
+level=debug msg=      + api_version                                      = (known after apply)
+level=debug msg=      + availability_zone_reference                      = (known after apply)
+level=debug msg=      + boot_device_disk_address                         = (known after apply)
+level=debug msg=      + boot_device_mac_address                          = (known after apply)
+level=debug msg=      + boot_device_order_list                           = [
+level=debug msg=          + "DISK",
+level=debug msg=          + "CDROM",
+level=debug msg=          + "NETWORK",
+level=debug msg=        ]
+level=debug msg=      + boot_type                                        = (known after apply)
+level=debug msg=      + cloud_init_cdrom_uuid                            = (known after apply)
+level=debug msg=      + cluster_name                                     = (known after apply)
+level=debug msg=      + cluster_uuid                                     = "0005efbd-211a-3d87-62af-9440c97b55c4"
+level=debug msg=      + description                                      = "Created By OpenShift Installer"
+level=debug msg=      + enable_cpu_passthrough                           = false
+level=debug msg=      + enable_script_exec                               = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_custom_key_values = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_meta_data         = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_user_data         = (sensitive)
+level=debug msg=      + guest_customization_is_overridable               = (known after apply)
+level=debug msg=      + guest_customization_sysprep                      = (known after apply)
+level=debug msg=      + guest_customization_sysprep_custom_key_values    = (known after apply)
+level=debug msg=      + guest_os_id                                      = (known after apply)
+level=debug msg=      + hardware_clock_timezone                          = (known after apply)
+level=debug msg=      + host_reference                                   = (known after apply)
+level=debug msg=      + hypervisor_type                                  = (known after apply)
+level=debug msg=      + id                                               = (known after apply)
+level=debug msg=      + is_vcpu_hard_pinned                              = false
+level=debug msg=      + machine_type                                     = (known after apply)
+level=debug msg=      + memory_size_mib                                  = 16384
+level=debug msg=      + metadata                                         = (known after apply)
+level=debug msg=      + name                                             = "ocp1ipi-gp8tk-master-2"
+level=debug msg=      + ngt_credentials                                  = (known after apply)
+level=debug msg=      + ngt_enabled_capability_list                      = (known after apply)
+level=debug msg=      + nic_list_status                                  = (known after apply)
+level=debug msg=      + num_sockets                                      = 8
+level=debug msg=      + num_vcpus_per_socket                             = 1
+level=debug msg=      + num_vnuma_nodes                                  = (known after apply)
+level=debug msg=      + nutanix_guest_tools                              = (known after apply)
+level=debug msg=      + owner_reference                                  = (known after apply)
+level=debug msg=      + parent_reference                                 = (known after apply)
+level=debug msg=      + power_state                                      = (known after apply)
+level=debug msg=      + power_state_mechanism                            = (known after apply)
+level=debug msg=      + project_reference                                = (known after apply)
+level=debug msg=      + should_fail_on_script_failure                    = (known after apply)
+level=debug msg=      + state                                            = (known after apply)
+level=debug msg=      + use_hot_add                                      = true
+level=debug msg=      + vga_console_enabled                              = (known after apply)
+level=debug
+level=debug msg=      + categories {
+level=debug msg=          + name  = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=          + value = "owned"
+level=debug msg=        }
+level=debug
+level=debug msg=      + disk_list {
+level=debug msg=          + data_source_reference  = (known after apply)
+level=debug msg=          + disk_size_bytes        = 0
+level=debug msg=          + disk_size_mib          = 122880
+level=debug msg=          + uuid                   = (known after apply)
+level=debug msg=          + volume_group_reference = (known after apply)
+level=debug
+level=debug msg=          + device_properties {
+level=debug msg=              + device_type  = "DISK"
+level=debug msg=              + disk_address = {
+level=debug msg=                  + "adapter_type" = "SCSI"
+level=debug msg=                  + "device_index" = "0"
+level=debug msg=                }
+level=debug msg=            }
+level=debug msg=        }
+level=debug
+level=debug msg=      + gpu_list {
+level=debug msg=          + device_id                 = (known after apply)
+level=debug msg=          + fraction                  = (known after apply)
+level=debug msg=          + frame_buffer_size_mib     = (known after apply)
+level=debug msg=          + guest_driver_version      = (known after apply)
+level=debug msg=          + mode                      = (known after apply)
+level=debug msg=          + name                      = (known after apply)
+level=debug msg=          + num_virtual_display_heads = (known after apply)
+level=debug msg=          + pci_address               = (known after apply)
+level=debug msg=          + uuid                      = (known after apply)
+level=debug msg=          + vendor                    = (known after apply)
+level=debug msg=        }
+level=debug
+level=debug msg=      + nic_list {
+level=debug msg=          + is_connected                     = "true"
+level=debug msg=          + mac_address                      = (known after apply)
+level=debug msg=          + model                            = (known after apply)
+level=debug msg=          + network_function_chain_reference = (known after apply)
+level=debug msg=          + network_function_nic_type        = (known after apply)
+level=debug msg=          + nic_type                         = (known after apply)
+level=debug msg=          + num_queues                       = (known after apply)
+level=debug msg=          + subnet_name                      = (known after apply)
+level=debug msg=          + subnet_uuid                      = "adaa1561-536c-4780-ad7b-cb2be4a2d407"
+level=debug msg=          + uuid                             = (known after apply)
+level=debug
+level=debug msg=          + ip_endpoint_list {
+level=debug msg=              + ip   = (known after apply)
+level=debug msg=              + type = (known after apply)
+level=debug msg=            }
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=Plan: 7 to add, 0 to change, 0 to destroy.
+level=debug
+level=debug msg=Changes to Outputs:
+level=debug msg=  + control_plane_ips            = [
+level=debug msg=      + (known after apply),
+level=debug msg=      + (known after apply),
+level=debug msg=      + (known after apply),
+level=debug msg=    ]
+level=debug msg=  + image_id                     = (known after apply)
+level=debug msg=  + ocp_category_key_id          = (known after apply)
+level=debug msg=  + ocp_category_value_owned_id  = (known after apply)
+level=debug msg=  + ocp_category_value_shared_id = (known after apply)
+level=debug msg=nutanix_category_key.ocp_category_key: Creating...
+level=debug msg=nutanix_category_key.ocp_category_key: Creation complete after 1s [id=kubernetes-io-cluster-ocp1ipi-gp8tk]
+level=debug msg=nutanix_category_value.ocp_category_value_shared: Creating...
+level=debug msg=nutanix_category_value.ocp_category_value_owned: Creating...
+level=debug msg=nutanix_category_value.ocp_category_value_owned: Creation complete after 1s [id=owned]
+level=debug msg=nutanix_image.rhcos: Creating...
+level=debug msg=nutanix_category_value.ocp_category_value_shared: Creation complete after 1s [id=shared]
+level=debug msg=nutanix_image.rhcos: Still creating... [10s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [20s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [30s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [40s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [50s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [1m0s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [1m10s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [1m20s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [1m30s elapsed]
+level=debug msg=nutanix_image.rhcos: Still creating... [1m40s elapsed]
+level=debug msg=nutanix_image.rhcos: Creation complete after 1m42s [id=bbfdf56e-844e-43d0-b9e8-61e8a7d45a07]
+level=debug msg=nutanix_virtual_machine.vm_master[2]: Creating...
+level=debug msg=nutanix_virtual_machine.vm_master[0]: Creating...
+level=debug msg=nutanix_virtual_machine.vm_master[1]: Creating...
+level=debug msg=nutanix_virtual_machine.vm_master[2]: Still creating... [10s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_master[0]: Still creating... [10s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_master[1]: Still creating... [10s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_master[1]: Creation complete after 11s [id=01cf67f9-af58-4769-9aa4-74ed84b098e4]
+level=debug msg=nutanix_virtual_machine.vm_master[2]: Creation complete after 17s [id=11a7c7f6-d5e3-4a30-b53c-2fe62348b884]
+level=debug msg=nutanix_virtual_machine.vm_master[0]: Creation complete after 17s [id=f9fb1fd2-cf59-4d99-8a11-cb15854b7dee]
+level=debug
+level=debug msg=Warning: Disabled Providers: foundation. Please provide required fields in provider configuration to enable them. Refer docs.
+level=debug
+level=debug msg=  with provider["openshift/local/nutanix"],
+level=debug msg=  on main.tf line 5, in provider "nutanix":
+level=debug msg=   5: provider "nutanix" {
+level=debug
+level=debug msg=(and one more similar warning elsewhere)
+level=debug
+level=debug msg=Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
+level=debug
+level=debug msg=Outputs:
+level=debug
+level=debug msg=control_plane_ips = [
+level=debug msg=  "10.38.252.196",
+level=debug msg=  "10.38.252.135",
+level=debug msg=  "10.38.252.239",
+level=debug msg=]
+level=debug msg=image_id = "bbfdf56e-844e-43d0-b9e8-61e8a7d45a07"
+level=debug msg=ocp_category_key_id = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=ocp_category_value_owned_id = "owned"
+level=debug msg=ocp_category_value_shared_id = "shared"
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform output -no-color -json
+level=debug msg={
+level=debug msg=  "control_plane_ips": {
+level=debug msg=    "sensitive": false,
+level=debug msg=    "type": [
+level=debug msg=      "tuple",
+level=debug msg=      [
+level=debug msg=        "string",
+level=debug msg=        "string",
+level=debug msg=        "string"
+level=debug msg=      ]
+level=debug msg=    ],
+level=debug msg=    "value": [
+level=debug msg=      "10.38.252.196",
+level=debug msg=      "10.38.252.135",
+level=debug msg=      "10.38.252.239"
+level=debug msg=    ]
+level=debug msg=  },
+level=debug msg=  "image_id": {
+level=debug msg=    "sensitive": false,
+level=debug msg=    "type": "string",
+level=debug msg=    "value": "bbfdf56e-844e-43d0-b9e8-61e8a7d45a07"
+level=debug msg=  },
+level=debug msg=  "ocp_category_key_id": {
+level=debug msg=    "sensitive": false,
+level=debug msg=    "type": "string",
+level=debug msg=    "value": "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=  },
+level=debug msg=  "ocp_category_value_owned_id": {
+level=debug msg=    "sensitive": false,
+level=debug msg=    "type": "string",
+level=debug msg=    "value": "owned"
+level=debug msg=  },
+level=debug msg=  "ocp_category_value_shared_id": {
+level=debug msg=    "sensitive": false,
+level=debug msg=    "type": "string",
+level=debug msg=    "value": "shared"
+level=debug msg=  }
+level=debug msg=}
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform version -json
+level=debug msg={
+level=debug msg=  "terraform_version": "1.0.11",
+level=debug msg=  "platform": "linux_amd64",
+level=debug msg=  "provider_selections": {},
+level=debug msg=  "terraform_outdated": true
+level=debug msg=}
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform init -no-color -force-copy -input=false -backend=true -get=true -upgrade=false -plugin-dir=/root/openshift/terraform/plugins
+level=debug
+level=debug msg=Initializing the backend...
+level=debug
+level=debug msg=Initializing provider plugins...
+level=debug msg=- Finding latest version of openshift/local/nutanix...
+level=debug msg=- Installing openshift/local/nutanix v1.0.0...
+level=debug msg=- Installed openshift/local/nutanix v1.0.0 (unauthenticated)
+level=debug
+level=debug msg=Terraform has created a lock file .terraform.lock.hcl to record the provider
+level=debug msg=selections it made above. Include this file in your version control repository
+level=debug msg=so that Terraform can guarantee to make the same selections by default when
+level=debug msg=you run "terraform init" in the future.
+level=debug
+level=debug msg=Terraform has been successfully initialized!
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform apply -no-color -auto-approve -input=false -var-file=/tmp/openshift-install-bootstrap-754930835/terraform.tfvars.json -var-file=/tmp/openshift-install-bootstrap-754930835/terraform.platform.auto.tfvars.json -var-file=/tmp/openshift-install-bootstrap-754930835/cluster.tfvars.json -lock=true -parallelism=10 -refresh=true
+level=debug
+level=debug msg=Terraform used the selected providers to generate the following execution
+level=debug msg=plan. Resource actions are indicated with the following symbols:
+level=debug msg=  + create
+level=debug
+level=debug msg=Terraform will perform the following actions:
+level=debug
+level=debug msg=  # nutanix_image.bootstrap_ignition will be created
+level=debug msg=  + resource "nutanix_image" "bootstrap_ignition" {
+level=debug msg=      + api_version                    = (known after apply)
+level=debug msg=      + architecture                   = (known after apply)
+level=debug msg=      + availability_zone_reference    = (known after apply)
+level=debug msg=      + checksum                       = (known after apply)
+level=debug msg=      + cluster_name                   = (known after apply)
+level=debug msg=      + cluster_uuid                   = (known after apply)
+level=debug msg=      + current_cluster_reference_list = (known after apply)
+level=debug msg=      + description                    = "Created By OpenShift Installer"
+level=debug msg=      + id                             = (known after apply)
+level=debug msg=      + image_type                     = (known after apply)
+level=debug msg=      + metadata                       = (known after apply)
+level=debug msg=      + name                           = "ocp1ipi-gp8tk-bootstrap-ign.iso"
+level=debug msg=      + owner_reference                = (known after apply)
+level=debug msg=      + retrieval_uri_list             = (known after apply)
+level=debug msg=      + size_bytes                     = (known after apply)
+level=debug msg=      + source_path                    = "/root/.cache/openshift-installer/image_cache/ocp1ipi-gp8tk-bootstrap-ign.iso"
+level=debug msg=      + source_uri                     = (known after apply)
+level=debug msg=      + state                          = (known after apply)
+level=debug msg=      + version                        = (known after apply)
+level=debug
+level=debug msg=      + categories {
+level=debug msg=          + name  = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=          + value = "owned"
+level=debug msg=        }
+level=debug
+level=debug msg=      + cluster_references {
+level=debug msg=          + kind = (known after apply)
+level=debug msg=          + name = (known after apply)
+level=debug msg=          + uuid = (known after apply)
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_virtual_machine.vm_bootstrap will be created
+level=debug msg=  + resource "nutanix_virtual_machine" "vm_bootstrap" {
+level=debug msg=      + api_version                                      = (known after apply)
+level=debug msg=      + availability_zone_reference                      = (known after apply)
+level=debug msg=      + boot_device_disk_address                         = (known after apply)
+level=debug msg=      + boot_device_mac_address                          = (known after apply)
+level=debug msg=      + boot_device_order_list                           = [
+level=debug msg=          + "DISK",
+level=debug msg=          + "CDROM",
+level=debug msg=          + "NETWORK",
+level=debug msg=        ]
+level=debug msg=      + boot_type                                        = (known after apply)
+level=debug msg=      + cloud_init_cdrom_uuid                            = (known after apply)
+level=debug msg=      + cluster_name                                     = (known after apply)
+level=debug msg=      + cluster_uuid                                     = "0005efbd-211a-3d87-62af-9440c97b55c4"
+level=debug msg=      + description                                      = "Created By OpenShift Installer"
+level=debug msg=      + enable_cpu_passthrough                           = false
+level=debug msg=      + enable_script_exec                               = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_custom_key_values = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_meta_data         = (known after apply)
+level=debug msg=      + guest_customization_cloud_init_user_data         = (known after apply)
+level=debug msg=      + guest_customization_is_overridable               = (known after apply)
+level=debug msg=      + guest_customization_sysprep                      = (known after apply)
+level=debug msg=      + guest_customization_sysprep_custom_key_values    = (known after apply)
+level=debug msg=      + guest_os_id                                      = (known after apply)
+level=debug msg=      + hardware_clock_timezone                          = (known after apply)
+level=debug msg=      + host_reference                                   = (known after apply)
+level=debug msg=      + hypervisor_type                                  = (known after apply)
+level=debug msg=      + id                                               = (known after apply)
+level=debug msg=      + is_vcpu_hard_pinned                              = false
+level=debug msg=      + machine_type                                     = (known after apply)
+level=debug msg=      + memory_size_mib                                  = 16384
+level=debug msg=      + metadata                                         = (known after apply)
+level=debug msg=      + name                                             = "ocp1ipi-gp8tk-bootstrap"
+level=debug msg=      + ngt_credentials                                  = (known after apply)
+level=debug msg=      + ngt_enabled_capability_list                      = (known after apply)
+level=debug msg=      + nic_list_status                                  = (known after apply)
+level=debug msg=      + num_sockets                                      = 1
+level=debug msg=      + num_vcpus_per_socket                             = 4
+level=debug msg=      + num_vnuma_nodes                                  = (known after apply)
+level=debug msg=      + nutanix_guest_tools                              = (known after apply)
+level=debug msg=      + owner_reference                                  = (known after apply)
+level=debug msg=      + parent_reference                                 = (known after apply)
+level=debug msg=      + power_state                                      = (known after apply)
+level=debug msg=      + power_state_mechanism                            = (known after apply)
+level=debug msg=      + project_reference                                = (known after apply)
+level=debug msg=      + should_fail_on_script_failure                    = (known after apply)
+level=debug msg=      + state                                            = (known after apply)
+level=debug msg=      + use_hot_add                                      = true
+level=debug msg=      + vga_console_enabled                              = (known after apply)
+level=debug
+level=debug msg=      + categories {
+level=debug msg=          + name  = "kubernetes-io-cluster-ocp1ipi-gp8tk"
+level=debug msg=          + value = "owned"
+level=debug msg=        }
+level=debug
+level=debug msg=      + disk_list {
+level=debug msg=          + data_source_reference  = {
+level=debug msg=              + "kind" = "image"
+level=debug msg=              + "uuid" = "bbfdf56e-844e-43d0-b9e8-61e8a7d45a07"
+level=debug msg=            }
+level=debug msg=          + disk_size_bytes        = (known after apply)
+level=debug msg=          + disk_size_mib          = 122880
+level=debug msg=          + uuid                   = (known after apply)
+level=debug msg=          + volume_group_reference = (known after apply)
+level=debug
+level=debug msg=          + device_properties {
+level=debug msg=              + device_type  = "DISK"
+level=debug msg=              + disk_address = {
+level=debug msg=                  + "adapter_type" = "SCSI"
+level=debug msg=                  + "device_index" = "0"
+level=debug msg=                }
+level=debug msg=            }
+level=debug
+level=debug msg=          + storage_config {
+level=debug msg=              + flash_mode = (known after apply)
+level=debug
+level=debug msg=              + storage_container_reference {
+level=debug msg=                  + kind = (known after apply)
+level=debug msg=                  + name = (known after apply)
+level=debug msg=                  + url  = (known after apply)
+level=debug msg=                  + uuid = (known after apply)
+level=debug msg=                }
+level=debug msg=            }
+level=debug msg=        }
+level=debug msg=      + disk_list {
+level=debug msg=          + data_source_reference  = (known after apply)
+level=debug msg=          + disk_size_bytes        = (known after apply)
+level=debug msg=          + disk_size_mib          = (known after apply)
+level=debug msg=          + uuid                   = (known after apply)
+level=debug msg=          + volume_group_reference = (known after apply)
+level=debug
+level=debug msg=          + device_properties {
+level=debug msg=              + device_type  = "CDROM"
+level=debug msg=              + disk_address = {
+level=debug msg=                  + "adapter_type" = "IDE"
+level=debug msg=                  + "device_index" = "0"
+level=debug msg=                }
+level=debug msg=            }
+level=debug
+level=debug msg=          + storage_config {
+level=debug msg=              + flash_mode = (known after apply)
+level=debug
+level=debug msg=              + storage_container_reference {
+level=debug msg=                  + kind = (known after apply)
+level=debug msg=                  + name = (known after apply)
+level=debug msg=                  + url  = (known after apply)
+level=debug msg=                  + uuid = (known after apply)
+level=debug msg=                }
+level=debug msg=            }
+level=debug msg=        }
+level=debug
+level=debug msg=      + gpu_list {
+level=debug msg=          + device_id                 = (known after apply)
+level=debug msg=          + fraction                  = (known after apply)
+level=debug msg=          + frame_buffer_size_mib     = (known after apply)
+level=debug msg=          + guest_driver_version      = (known after apply)
+level=debug msg=          + mode                      = (known after apply)
+level=debug msg=          + name                      = (known after apply)
+level=debug msg=          + num_virtual_display_heads = (known after apply)
+level=debug msg=          + pci_address               = (known after apply)
+level=debug msg=          + uuid                      = (known after apply)
+level=debug msg=          + vendor                    = (known after apply)
+level=debug msg=        }
+level=debug
+level=debug msg=      + nic_list {
+level=debug msg=          + is_connected                     = "true"
+level=debug msg=          + mac_address                      = (known after apply)
+level=debug msg=          + model                            = (known after apply)
+level=debug msg=          + network_function_chain_reference = (known after apply)
+level=debug msg=          + network_function_nic_type        = (known after apply)
+level=debug msg=          + nic_type                         = (known after apply)
+level=debug msg=          + num_queues                       = (known after apply)
+level=debug msg=          + subnet_name                      = (known after apply)
+level=debug msg=          + subnet_uuid                      = "adaa1561-536c-4780-ad7b-cb2be4a2d407"
+level=debug msg=          + uuid                             = (known after apply)
+level=debug
+level=debug msg=          + ip_endpoint_list {
+level=debug msg=              + ip   = (known after apply)
+level=debug msg=              + type = (known after apply)
+level=debug msg=            }
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=Plan: 2 to add, 0 to change, 0 to destroy.
+level=debug
+level=debug msg=Changes to Outputs:
+level=debug msg=  + bootstrap_ip = (known after apply)
+level=debug msg=nutanix_image.bootstrap_ignition: Creating...
+level=debug msg=nutanix_image.bootstrap_ignition: Still creating... [10s elapsed]
+level=debug msg=nutanix_image.bootstrap_ignition: Still creating... [20s elapsed]
+level=debug msg=nutanix_image.bootstrap_ignition: Still creating... [30s elapsed]
+level=debug msg=nutanix_image.bootstrap_ignition: Creation complete after 32s [id=3a6b8502-a18c-4b1c-a853-5a6a8044b13e]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Creating...
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Still creating... [10s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Still creating... [20s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Still creating... [30s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Creation complete after 37s [id=ea6432f7-e071-42a3-95b8-7a9c6886e3ed]
+level=debug
+level=debug msg=Warning: Value for undeclared variable
+level=debug
+level=debug msg=The root module does not declare a variable named
+level=debug msg="ocp_category_value_shared_id" but a value was found in file
+level=debug msg="/tmp/openshift-install-bootstrap-754930835/cluster.tfvars.json". If you
+level=debug msg=meant to use this value, add a "variable" block to the configuration.
+level=debug
+level=debug msg=To silence these warnings, use TF_VAR_... environment variables to provide
+level=debug msg=certain "global" settings to all configurations in your organization. To
+level=debug msg=reduce the verbosity of these warnings, use the -compact-warnings option.
+level=debug
+level=debug msg=Warning: Value for undeclared variable
+level=debug
+level=debug msg=The root module does not declare a variable named "control_plane_ips" but a
+level=debug msg=value was found in file
+level=debug msg="/tmp/openshift-install-bootstrap-754930835/cluster.tfvars.json". If you
+level=debug msg=meant to use this value, add a "variable" block to the configuration.
+level=debug
+level=debug msg=To silence these warnings, use TF_VAR_... environment variables to provide
+level=debug msg=certain "global" settings to all configurations in your organization. To
+level=debug msg=reduce the verbosity of these warnings, use the -compact-warnings option.
+level=debug
+level=debug msg=Warning: Disabled Providers: foundation. Please provide required fields in provider configuration to enable them. Refer docs.
+level=debug
+level=debug msg=  with provider["openshift/local/nutanix"],
+level=debug msg=  on main.tf line 5, in provider "nutanix":
+level=debug msg=   5: provider "nutanix" {
+level=debug
+level=debug msg=(and one more similar warning elsewhere)
+level=debug
+level=debug msg=Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+level=debug
+level=debug msg=Outputs:
+level=debug
+level=debug msg=bootstrap_ip = "10.38.252.137"
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform output -no-color -json
+level=debug msg={
+level=debug msg=  "bootstrap_ip": {
+level=debug msg=    "sensitive": false,
+level=debug msg=    "type": "string",
+level=debug msg=    "value": "10.38.252.137"
+level=debug msg=  }
+level=debug msg=}
+level=debug msg=OpenShift Installer 4.11.20
+level=debug msg=Built from commit 7e60d787431c862a90f6ffc918b24251516f0585
+level=info msg=Waiting up to 20m0s (until 11:19PM) for the Kubernetes API at https://api.ocp1ipi.ntnxlab.local:6443...
+level=debug msg=Still waiting for the Kubernetes API: Get "https://api.ocp1ipi.ntnxlab.local:6443/version": dial tcp 10.38.252.133:6443: connect: no route to host
+level=debug msg=Still waiting for the Kubernetes API: Get "https://api.ocp1ipi.ntnxlab.local:6443/version": dial tcp 10.38.252.133:6443: connect: no route to host
+level=info msg=API v1.24.6+5658434 up
+level=debug msg=Loading Install Config...
+level=debug msg=  Loading SSH Key...
+level=debug msg=  Using SSH Key loaded from state file
+level=debug msg=  Loading Base Domain...
+level=debug msg=    Loading Platform...
+level=debug msg=    Using Platform loaded from state file
+level=debug msg=  Using Base Domain loaded from state file
+level=debug msg=  Loading Cluster Name...
+level=debug msg=    Loading Base Domain...
+level=debug msg=    Loading Platform...
+level=debug msg=  Using Cluster Name loaded from state file
+level=debug msg=  Loading Networking...
+level=debug msg=    Loading Platform...
+level=debug msg=  Using Networking loaded from state file
+level=debug msg=  Loading Pull Secret...
+level=debug msg=  Using Pull Secret loaded from state file
+level=debug msg=  Loading Platform...
+level=debug msg=Using Install Config loaded from state file
+level=info msg=Waiting up to 30m0s (until 11:30PM) for bootstrapping to complete...
+level=debug msg=Bootstrap status: complete
+level=info msg=Destroying the bootstrap resources...
+level=debug msg=creating /root/openshift/terraform/bin/terraform file
+level=debug msg=creating /root/openshift/terraform/plugins/openshift/local/nutanix directory
+level=debug msg=creating /root/openshift/terraform/plugins/openshift/local/nutanix/terraform-provider-nutanix_1.0.0_linux_amd64.zip file
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform version -json
+level=debug msg={
+level=debug msg=  "terraform_version": "1.0.11",
+level=debug msg=  "platform": "linux_amd64",
+level=debug msg=  "provider_selections": {},
+level=debug msg=  "terraform_outdated": true
+level=debug msg=}
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform init -no-color -force-copy -input=false -backend=true -get=true -upgrade=false -plugin-dir=/root/openshift/terraform/plugins
+level=debug
+level=debug msg=Initializing the backend...
+level=debug
+level=debug msg=Initializing provider plugins...
+level=debug msg=- Finding latest version of openshift/local/nutanix...
+level=debug msg=- Installing openshift/local/nutanix v1.0.0...
+level=debug msg=- Installed openshift/local/nutanix v1.0.0 (unauthenticated)
+level=debug
+level=debug msg=Terraform has created a lock file .terraform.lock.hcl to record the provider
+level=debug msg=selections it made above. Include this file in your version control repository
+level=debug msg=so that Terraform can guarantee to make the same selections by default when
+level=debug msg=you run "terraform init" in the future.
+level=debug
+level=debug msg=Terraform has been successfully initialized!
+level=debug msg=[INFO] running Terraform command: /root/openshift/terraform/bin/terraform destroy -no-color -auto-approve -input=false -lock-timeout=0s -var-file=/tmp/openshift-install-bootstrap-2313747829/terraform.tfvars.json -var-file=/tmp/openshift-install-bootstrap-2313747829/terraform.platform.auto.tfvars.json -var-file=/tmp/openshift-install-bootstrap-2313747829/cluster.tfvars.json -var-file=/tmp/openshift-install-bootstrap-2313747829/bootstrap.tfvars.json -lock=true -parallelism=10 -refresh=true
+level=debug msg=nutanix_image.bootstrap_ignition: Refreshing state... [id=3a6b8502-a18c-4b1c-a853-5a6a8044b13e]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Refreshing state... [id=ea6432f7-e071-42a3-95b8-7a9c6886e3ed]
+level=debug
+level=debug msg=Note: Objects have changed outside of Terraform
+level=debug
+level=debug msg=Terraform detected the following changes made outside of Terraform since the
+level=debug msg=last "terraform apply":
+level=debug
+level=debug msg=  # nutanix_virtual_machine.vm_bootstrap has been changed
+level=debug msg=  ~ resource "nutanix_virtual_machine" "vm_bootstrap" {
+level=debug msg=        id                                               = "ea6432f7-e071-42a3-95b8-7a9c6886e3ed"
+level=debug msg=        name                                             = "ocp1ipi-gp8tk-bootstrap"
+level=debug msg=      ~ nic_list_status                                  = [
+level=debug msg=          ~ {
+level=debug msg=              ~ ip_endpoint_list                 = [
+level=debug msg=                    {
+level=debug msg=                        ip   = "10.38.252.137"
+level=debug msg=                        type = "ASSIGNED"
+level=debug msg=                    },
+level=debug msg=                  + {
+level=debug msg=                      + ip   = "10.38.252.133"
+level=debug msg=                      + type = "LEARNED"
+level=debug msg=                    },
+level=debug msg=                ]
+level=debug msg=                # (11 unchanged elements hidden)
+level=debug msg=            },
+level=debug msg=        ]
+level=debug msg=        # (35 unchanged attributes hidden)
+level=debug
+level=debug
+level=debug
+level=debug msg=        # (4 unchanged blocks hidden)
+level=debug msg=    }
+level=debug
+level=debug msg=Unless you have made equivalent changes to your configuration, or ignored the
+level=debug msg=relevant attributes using ignore_changes, the following plan may include
+level=debug msg=actions to undo or respond to these changes.
+level=debug
+level=debug msg=─────────────────────────────────────────────────────────────────────────────
+level=debug
+level=debug msg=Terraform used the selected providers to generate the following execution
+level=debug msg=plan. Resource actions are indicated with the following symbols:
+level=debug msg=  - destroy
+level=debug
+level=debug msg=Terraform will perform the following actions:
+level=debug
+level=debug msg=  # nutanix_image.bootstrap_ignition will be destroyed
+level=debug msg=  - resource "nutanix_image" "bootstrap_ignition" {
+level=debug msg=      - api_version                    = "3.1" -> null
+level=debug msg=      - availability_zone_reference    = {} -> null
+level=debug msg=      - checksum                       = {} -> null
+level=debug msg=      - current_cluster_reference_list = [
+level=debug msg=          - {
+level=debug msg=              - kind = "cluster"
+level=debug msg=              - name = ""
+level=debug msg=              - uuid = "0005efbd-211a-3d87-62af-9440c97b55c4"
+level=debug msg=            },
+level=debug msg=        ] -> null
+level=debug msg=      - description                    = "Created By OpenShift Installer" -> null
+level=debug msg=      - id                             = "3a6b8502-a18c-4b1c-a853-5a6a8044b13e" -> null
+level=debug msg=      - image_type                     = "ISO_IMAGE" -> null
+level=debug msg=      - metadata                       = {
+level=debug msg=          - "creation_time"    = "2023-01-02 06:58:30 +0000 UTC"
+level=debug msg=          - "last_update_time" = "2023-01-02 06:58:49 +0000 UTC"
+level=debug msg=          - "name"             = ""
+level=debug msg=          - "spec_hash"        = "00000000000000000000000000000000000000000000000000"
+level=debug msg=          - "spec_version"     = "2"
+level=debug msg=          - "uuid"             = "3a6b8502-a18c-4b1c-a853-5a6a8044b13e"
+level=debug msg=        } -> null
+level=debug msg=      - name                           = "ocp1ipi-gp8tk-bootstrap-ign.iso" -> null
+level=debug msg=      - owner_reference                = {
+level=debug msg=          - "kind" = "user"
+level=debug msg=          - "name" = "admin"
+level=debug msg=          - "uuid" = "00000000-0000-0000-0000-000000000000"
+level=debug msg=        } -> null
+level=debug msg=      - retrieval_uri_list             = [
+level=debug msg=          - "https://127.0.0.1:9440/api/nutanix/v3/images/3a6b8502-a18c-4b1c-a853-5a6a8044b13e/file",
+level=debug msg=        ] -> null
+level=debug msg=      - size_bytes                     = 344064 -> null
+level=debug msg=      - source_path                    = "/root/.cache/openshift-installer/image_cache/ocp1ipi-gp8tk-bootstrap-ign.iso" -> null
+level=debug msg=      - source_uri                     = "file://3a6b8502-a18c-4b1c-a853-5a6a8044b13e" -> null
+level=debug msg=      - state                          = "COMPLETE" -> null
+level=debug msg=      - version                        = {} -> null
+level=debug
+level=debug msg=      - categories {
+level=debug msg=          - name  = "kubernetes-io-cluster-ocp1ipi-gp8tk" -> null
+level=debug msg=          - value = "owned" -> null
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=  # nutanix_virtual_machine.vm_bootstrap will be destroyed
+level=debug msg=  - resource "nutanix_virtual_machine" "vm_bootstrap" {
+level=debug msg=      - api_version                                      = "3.1" -> null
+level=debug msg=      - availability_zone_reference                      = {} -> null
+level=debug msg=      - boot_device_disk_address                         = {} -> null
+level=debug msg=      - boot_device_order_list                           = [
+level=debug msg=          - "DISK",
+level=debug msg=          - "CDROM",
+level=debug msg=          - "NETWORK",
+level=debug msg=        ] -> null
+level=debug msg=      - boot_type                                        = "LEGACY" -> null
+level=debug msg=      - cluster_name                                     = "PHX-POC252" -> null
+level=debug msg=      - cluster_uuid                                     = "0005efbd-211a-3d87-62af-9440c97b55c4" -> null
+level=debug msg=      - description                                      = "Created By OpenShift Installer" -> null
+level=debug msg=      - enable_cpu_passthrough                           = false -> null
+level=debug msg=      - enable_script_exec                               = false -> null
+level=debug msg=      - guest_customization_cloud_init_custom_key_values = {} -> null
+level=debug msg=      - guest_customization_is_overridable               = false -> null
+level=debug msg=      - guest_customization_sysprep                      = {} -> null
+level=debug msg=      - guest_customization_sysprep_custom_key_values    = {} -> null
+level=debug msg=      - hardware_clock_timezone                          = "UTC" -> null
+level=debug msg=      - host_reference                                   = {
+level=debug msg=          - "kind" = "host"
+level=debug msg=          - "name" = "10.38.252.25"
+level=debug msg=          - "uuid" = "b26c4b4e-a2f8-459d-b455-659cfb97c536"
+level=debug msg=        } -> null
+level=debug msg=      - id                                               = "ea6432f7-e071-42a3-95b8-7a9c6886e3ed" -> null
+level=debug msg=      - is_vcpu_hard_pinned                              = false -> null
+level=debug msg=      - machine_type                                     = "PC" -> null
+level=debug msg=      - memory_size_mib                                  = 16384 -> null
+level=debug msg=      - metadata                                         = {
+level=debug msg=          - "creation_time"    = "2023-01-02 06:59:02 +0000 UTC"
+level=debug msg=          - "last_update_time" = "2023-01-02 06:59:02 +0000 UTC"
+level=debug msg=          - "name"             = ""
+level=debug msg=          - "spec_hash"        = ""
+level=debug msg=          - "spec_version"     = "0"
+level=debug msg=          - "uuid"             = "ea6432f7-e071-42a3-95b8-7a9c6886e3ed"
+level=debug msg=        } -> null
+level=debug msg=      - name                                             = "ocp1ipi-gp8tk-bootstrap" -> null
+level=debug msg=      - ngt_credentials                                  = {} -> null
+level=debug msg=      - ngt_enabled_capability_list                      = [] -> null
+level=debug msg=      - nic_list_status                                  = [
+level=debug msg=          - {
+level=debug msg=              - floating_ip                      = ""
+level=debug msg=              - ip_endpoint_list                 = [
+level=debug msg=                  - {
+level=debug msg=                      - ip   = "10.38.252.137"
+level=debug msg=                      - type = "ASSIGNED"
+level=debug msg=                    },
+level=debug msg=                  - {
+level=debug msg=                      - ip   = "10.38.252.133"
+level=debug msg=                      - type = "LEARNED"
+level=debug msg=                    },
+level=debug msg=                ]
+level=debug msg=              - is_connected                     = "true"
+level=debug msg=              - mac_address                      = "50:6b:8d:8c:36:63"
+level=debug msg=              - model                            = ""
+level=debug msg=              - network_function_chain_reference = {}
+level=debug msg=              - network_function_nic_type        = ""
+level=debug msg=              - nic_type                         = "NORMAL_NIC"
+level=debug msg=              - num_queues                       = 0
+level=debug msg=              - subnet_name                      = "Secondary"
+level=debug msg=              - subnet_uuid                      = "adaa1561-536c-4780-ad7b-cb2be4a2d407"
+level=debug msg=              - uuid                             = "00665941-33f0-4986-b542-c212b19d69de"
+level=debug msg=            },
+level=debug msg=        ] -> null
+level=debug msg=      - num_sockets                                      = 1 -> null
+level=debug msg=      - num_vcpus_per_socket                             = 4 -> null
+level=debug msg=      - num_vnuma_nodes                                  = 0 -> null
+level=debug msg=      - nutanix_guest_tools                              = {} -> null
+level=debug msg=      - owner_reference                                  = {
+level=debug msg=          - "kind" = "user"
+level=debug msg=          - "name" = "admin"
+level=debug msg=          - "uuid" = "00000000-0000-0000-0000-000000000000"
+level=debug msg=        } -> null
+level=debug msg=      - parent_reference                                 = {} -> null
+level=debug msg=      - power_state                                      = "ON" -> null
+level=debug msg=      - power_state_mechanism                            = "HARD" -> null
+level=debug msg=      - project_reference                                = {
+level=debug msg=          - "kind" = "project"
+level=debug msg=          - "name" = "_internal"
+level=debug msg=          - "uuid" = "c0d9f025-04d3-41ec-9bb1-3030b60ee5b0"
+level=debug msg=        } -> null
+level=debug msg=      - should_fail_on_script_failure                    = false -> null
+level=debug msg=      - state                                            = "COMPLETE" -> null
+level=debug msg=      - use_hot_add                                      = true -> null
+level=debug msg=      - vga_console_enabled                              = true -> null
+level=debug
+level=debug msg=      - categories {
+level=debug msg=          - name  = "kubernetes-io-cluster-ocp1ipi-gp8tk" -> null
+level=debug msg=          - value = "owned" -> null
+level=debug msg=        }
+level=debug
+level=debug msg=      - disk_list {
+level=debug msg=          - data_source_reference  = {
+level=debug msg=              - "kind" = "image"
+level=debug msg=              - "uuid" = "bbfdf56e-844e-43d0-b9e8-61e8a7d45a07"
+level=debug msg=            } -> null
+level=debug msg=          - disk_size_bytes        = 128849018880 -> null
+level=debug msg=          - disk_size_mib          = 122880 -> null
+level=debug msg=          - uuid                   = "72d3b50e-6553-4ecb-8900-2a1c64dedff9" -> null
+level=debug msg=          - volume_group_reference = {} -> null
+level=debug
+level=debug msg=          - device_properties {
+level=debug msg=              - device_type  = "DISK" -> null
+level=debug msg=              - disk_address = {
+level=debug msg=                  - "adapter_type" = "SCSI"
+level=debug msg=                  - "device_index" = "0"
+level=debug msg=                } -> null
+level=debug msg=            }
+level=debug
+level=debug msg=          - storage_config {
+level=debug msg=              - storage_container_reference {
+level=debug msg=                  - kind = "storage_container" -> null
+level=debug msg=                  - name = "SelfServiceContainer" -> null
+level=debug msg=                  - uuid = "48f704f4-58c5-4d51-bad6-acd59802c4cb" -> null
+level=debug msg=                }
+level=debug msg=            }
+level=debug msg=        }
+level=debug msg=      - disk_list {
+level=debug msg=          - data_source_reference  = {
+level=debug msg=              - "kind" = "image"
+level=debug msg=              - "uuid" = "3a6b8502-a18c-4b1c-a853-5a6a8044b13e"
+level=debug msg=            } -> null
+level=debug msg=          - disk_size_bytes        = 344064 -> null
+level=debug msg=          - disk_size_mib          = 1 -> null
+level=debug msg=          - uuid                   = "e7cc3ac1-002f-4508-b1a4-81830cc67a0b" -> null
+level=debug msg=          - volume_group_reference = {} -> null
+level=debug
+level=debug msg=          - device_properties {
+level=debug msg=              - device_type  = "CDROM" -> null
+level=debug msg=              - disk_address = {
+level=debug msg=                  - "adapter_type" = "IDE"
+level=debug msg=                  - "device_index" = "0"
+level=debug msg=                } -> null
+level=debug msg=            }
+level=debug
+level=debug msg=          - storage_config {
+level=debug msg=              - storage_container_reference {
+level=debug msg=                  - kind = "storage_container" -> null
+level=debug msg=                  - name = "SelfServiceContainer" -> null
+level=debug msg=                  - uuid = "48f704f4-58c5-4d51-bad6-acd59802c4cb" -> null
+level=debug msg=                }
+level=debug msg=            }
+level=debug msg=        }
+level=debug
+level=debug msg=      - nic_list {
+level=debug msg=          - is_connected                     = "true" -> null
+level=debug msg=          - mac_address                      = "50:6b:8d:8c:36:63" -> null
+level=debug msg=          - network_function_chain_reference = {} -> null
+level=debug msg=          - nic_type                         = "NORMAL_NIC" -> null
+level=debug msg=          - num_queues                       = 0 -> null
+level=debug msg=          - subnet_name                      = "Secondary" -> null
+level=debug msg=          - subnet_uuid                      = "adaa1561-536c-4780-ad7b-cb2be4a2d407" -> null
+level=debug msg=          - uuid                             = "00665941-33f0-4986-b542-c212b19d69de" -> null
+level=debug
+level=debug msg=          - ip_endpoint_list {
+level=debug msg=              - ip   = "10.38.252.137" -> null
+level=debug msg=              - type = "ASSIGNED" -> null
+level=debug msg=            }
+level=debug msg=        }
+level=debug msg=    }
+level=debug
+level=debug msg=Plan: 0 to add, 0 to change, 2 to destroy.
+level=debug
+level=debug msg=Changes to Outputs:
+level=debug msg=  - bootstrap_ip = "10.38.252.137" -> null
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Destroying... [id=ea6432f7-e071-42a3-95b8-7a9c6886e3ed]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Still destroying... [id=ea6432f7-e071-42a3-95b8-7a9c6886e3ed, 10s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Still destroying... [id=ea6432f7-e071-42a3-95b8-7a9c6886e3ed, 20s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Still destroying... [id=ea6432f7-e071-42a3-95b8-7a9c6886e3ed, 30s elapsed]
+level=debug msg=nutanix_virtual_machine.vm_bootstrap: Destruction complete after 34s
+level=debug msg=nutanix_image.bootstrap_ignition: Destroying... [id=3a6b8502-a18c-4b1c-a853-5a6a8044b13e]
+level=debug msg=nutanix_image.bootstrap_ignition: Still destroying... [id=3a6b8502-a18c-4b1c-a853-5a6a8044b13e, 10s elapsed]
+level=debug msg=nutanix_image.bootstrap_ignition: Still destroying... [id=3a6b8502-a18c-4b1c-a853-5a6a8044b13e, 20s elapsed]
+level=debug msg=nutanix_image.bootstrap_ignition: Destruction complete after 20s
+level=debug
+level=debug msg=Warning: Value for undeclared variable
+level=debug
+level=debug msg=The root module does not declare a variable named "bootstrap_ip" but a value
+level=debug msg=was found in file
+level=debug msg="/tmp/openshift-install-bootstrap-2313747829/bootstrap.tfvars.json". If you
+level=debug msg=meant to use this value, add a "variable" block to the configuration.
+level=debug
+level=debug msg=To silence these warnings, use TF_VAR_... environment variables to provide
+level=debug msg=certain "global" settings to all configurations in your organization. To
+level=debug msg=reduce the verbosity of these warnings, use the -compact-warnings option.
+level=debug
+level=debug msg=Warning: Value for undeclared variable
+level=debug
+level=debug msg=The root module does not declare a variable named "control_plane_ips" but a
+level=debug msg=value was found in file
+level=debug msg="/tmp/openshift-install-bootstrap-2313747829/cluster.tfvars.json". If you
+level=debug msg=meant to use this value, add a "variable" block to the configuration.
+level=debug
+level=debug msg=To silence these warnings, use TF_VAR_... environment variables to provide
+level=debug msg=certain "global" settings to all configurations in your organization. To
+level=debug msg=reduce the verbosity of these warnings, use the -compact-warnings option.
+level=debug
+level=debug msg=Warning: Values for undeclared variables
+level=debug
+level=debug msg=In addition to the other similar warnings shown, 1 other variable(s) defined
+level=debug msg=without being declared.
+level=debug
+level=debug msg=Warning: Disabled Providers: foundation. Please provide required fields in provider configuration to enable them. Refer docs.
+level=debug
+level=debug msg=  with provider["openshift/local/nutanix"],
+level=debug msg=  on main.tf line 5, in provider "nutanix":
+level=debug msg=   5: provider "nutanix" {
+level=debug
+level=debug msg=(and one more similar warning elsewhere)
+level=debug
+level=debug msg=Destroy complete! Resources: 2 destroyed.
+level=debug msg=Loading Install Config...
+level=debug msg=  Loading SSH Key...
+level=debug msg=  Using SSH Key loaded from state file
+level=debug msg=  Loading Base Domain...
+level=debug msg=    Loading Platform...
+level=debug msg=    Using Platform loaded from state file
+level=debug msg=  Using Base Domain loaded from state file
+level=debug msg=  Loading Cluster Name...
+level=debug msg=    Loading Base Domain...
+level=debug msg=    Loading Platform...
+level=debug msg=  Using Cluster Name loaded from state file
+level=debug msg=  Loading Networking...
+level=debug msg=    Loading Platform...
+level=debug msg=  Using Networking loaded from state file
+level=debug msg=  Loading Pull Secret...
+level=debug msg=  Using Pull Secret loaded from state file
+level=debug msg=  Loading Platform...
+level=debug msg=Using Install Config loaded from state file
+level=info msg=Waiting up to 40m0s (until 11:53PM) for the cluster at https://api.ocp1ipi.ntnxlab.local:6443 to initialize...
+level=debug msg=Still waiting for the cluster to initialize: Some cluster operators are still updating: authentication, console, ingress, monitoring
+level=debug msg=Still waiting for the cluster to initialize: Some cluster operators are still updating: authentication, console, ingress, monitoring
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 780 of 803 done (97% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 780 of 803 done (97% complete)
+W0101 23:18:48.714507   74512 reflector.go:324] k8s.io/client-go/tools/watch/informerwatcher.go:146: failed to list *v1.ClusterVersion: Get "https://api.ocp1ipi.ntnxlab.local:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&resourceVersion=23021": EOF
+I0101 23:18:48.714606   74512 trace.go:205] Trace[232674035]: "Reflector ListAndWatch" name:k8s.io/client-go/tools/watch/informerwatcher.go:146 (01-Jan-2023 23:18:34.694) (total time: 14019ms):
+Trace[232674035]: ---"Objects listed" error:Get "https://api.ocp1ipi.ntnxlab.local:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&resourceVersion=23021": EOF 14019ms (23:18:48.714)
+Trace[232674035]: [14.019776085s] [14.019776085s] END
+E0101 23:18:48.714638   74512 reflector.go:138] k8s.io/client-go/tools/watch/informerwatcher.go:146: Failed to watch *v1.ClusterVersion: failed to list *v1.ClusterVersion: Get "https://api.ocp1ipi.ntnxlab.local:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&resourceVersion=23021": EOF
+W0101 23:19:00.662224   74512 reflector.go:324] k8s.io/client-go/tools/watch/informerwatcher.go:146: failed to list *v1.ClusterVersion: Get "https://api.ocp1ipi.ntnxlab.local:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&resourceVersion=23021": EOF
+I0101 23:19:00.662338   74512 trace.go:205] Trace[984283728]: "Reflector ListAndWatch" name:k8s.io/client-go/tools/watch/informerwatcher.go:146 (01-Jan-2023 23:18:50.640) (total time: 10021ms):
+Trace[984283728]: ---"Objects listed" error:Get "https://api.ocp1ipi.ntnxlab.local:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&resourceVersion=23021": EOF 10021ms (23:19:00.662)
+Trace[984283728]: [10.021635867s] [10.021635867s] END
+E0101 23:19:00.662356   74512 reflector.go:138] k8s.io/client-go/tools/watch/informerwatcher.go:146: Failed to watch *v1.ClusterVersion: failed to list *v1.ClusterVersion: Get "https://api.ocp1ipi.ntnxlab.local:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&resourceVersion=23021": EOF
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 780 of 803 done (97% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 2 of 803 done (0% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 27 of 803 done (3% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 30 of 803 done (3% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 606 of 803 done (75% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 607 of 803 done (75% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 752 of 803 done (93% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 753 of 803 done (93% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 780 of 803 done (97% complete)
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 780 of 803 done (97% complete)
+level=debug msg=Still waiting for the cluster to initialize: Some cluster operators are still updating: authentication, console
+level=debug msg=Still waiting for the cluster to initialize: Working towards 4.11.20: 797 of 803 done (99% complete)
+level=debug msg=Still waiting for the cluster to initialize: Cluster operator authentication is not available
+level=debug msg=Still waiting for the cluster to initialize: Cluster operator authentication is not available
+level=debug msg=Cluster is initialized
+level=info msg=Waiting up to 10m0s (until 11:41PM) for the openshift-console route to be created...
+level=debug msg=Route found in openshift-console namespace: console
+level=debug msg=OpenShift console route is admitted
+level=info msg=Install complete!
+level=info msg=To access the cluster as the system:admin user when using 'oc', run
+level=info msg=    export KUBECONFIG=/root/openshift/auth/kubeconfig
+level=info msg=Access the OpenShift web-console here: https://console-openshift-console.apps.ocp1ipi.ntnxlab.local
+level=info msg=Login to the console with user: "kubeadmin", and password: "a2DuL-hUczL-NDcY2-IbTiJ"
+level=debug msg=Time elapsed per stage:
+level=debug msg=           cluster: 2m2s
+level=debug msg=         bootstrap: 1m10s
+level=debug msg=Bootstrap Complete: 12m43s
+level=debug msg=               API: 1m5s
+level=debug msg= Bootstrap Destroy: 57s
+level=debug msg= Cluster Operators: 18m2s
+level=info msg=Time elapsed: 34m59s

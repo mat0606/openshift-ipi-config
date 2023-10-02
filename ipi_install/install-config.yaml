@@ -1,0 +1,76 @@
+additionalTrustBundlePolicy: Proxyonly
+apiVersion: v1
+baseDomain: ntnxlab.local
+additionalTrustBundle: |
+  -----BEGIN CERTIFICATE-----
+  MIIEEzCCAvugAwIBAgIJAJtkGKhNs0hrMA0GCSqGSIb3DQEBCwUAMIGfMQswCQYD
+  VQQGEwJTRzESMBAGA1UECAwJU2luZ2Fwb3JlMRIwEAYDVQQHDAlTaW5nYXBvcmUx
+  EDAOBgNVBAoMB051dGFuaXgxDzANBgNVBAsMBnJvb3RjYTEdMBsGA1UEAwwUcm9v
+  dGNhLm50bnhsYWIubG9jYWwxJjAkBgkqhkiG9w0BCQEWF21hdHRoZXcub25nQG51
+  dGFuaXguY29tMB4XDTIzMDEyMDAyMjg0NFoXDTI1MTEwOTAyMjg0NFowgZ8xCzAJ
+  BgNVBAYTAlNHMRIwEAYDVQQIDAlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9y
+  ZTEQMA4GA1UECgwHTnV0YW5peDEPMA0GA1UECwwGcm9vdGNhMR0wGwYDVQQDDBRy
+  b290Y2EubnRueGxhYi5sb2NhbDEmMCQGCSqGSIb3DQEJARYXbWF0dGhldy5vbmdA
+  bnV0YW5peC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCauHKk
+  Dqs8+OSpgnUq3oYoerg+GtoDnzHZy1lsmSWZdfPRosPzICvmwc9oBEWIYDveYTGR
+  qTPDoPIYlygqvXFFGjNTb70ExF8vP9QfHz8a5Wzd1syYjHtlbFZBVGR+GpCoAej0
+  TkYuedgF6GtAh2VGcpufEO/atLgioT8iCbinX9tmB1zcmZTyb+7Xu3boCsos78CE
+  OuYZZ0seza+0+yA9bZ97UAyaJjGyqdenjwM/NRrtI0wDa31ikUT7U/IlmaZTSk2u
+  NBFqkluef+YRND0F0kmjjuncH4tSb2RBDKrbZYE6/mLcWP2ETiq7x5Hy3ws2GLx4
+  9ehXYPoDToX0h5O3AgMBAAGjUDBOMB0GA1UdDgQWBBTgUcadZDf/xzxYkOpnv2lk
+  9PUKrDAfBgNVHSMEGDAWgBTgUcadZDf/xzxYkOpnv2lk9PUKrDAMBgNVHRMEBTAD
+  AQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBqojMUzrDnavZSehsAk+Ldb6FFAYEAT6IE
+  C+PEvlkaRkx4Pq5B+90orP5U3tCpyxR6aQ/z9wS6YR+lzjSY6JAJlyn1IKesQZRS
+  wjyOmTiS3YpTQHWK/Ul3Pt9dXwdF23H5pYnrTAT3qFSxwiQEzCOZhLTmOriH+akD
+  EzkjSXV37TfisOtYgIPLfI9dm8Rs6euPaiWH2b1fH2A/rFPnbbFcVCI9RZmJ15TA
+  KfuGIDdcBiOvb7QmhFRLDU36xCM48lkKsImUJ6t03/pwEdycYwyH6Kb627xoBqWc
+  9a8x8gdRU8Jd/3w6gMfQiozs7IFgcLEj8sF78ta44D4Av1vROldE
+  -----END CERTIFICATE-----
+compute:
+- architecture: amd64
+  hyperthreading: Enabled
+  name: worker
+  platform: {}
+  replicas: 3
+controlPlane:
+  architecture: amd64
+  hyperthreading: Enabled
+  name: master
+  platform: {}
+  replicas: 3
+credentialsMode: Manual
+metadata:
+  creationTimestamp: null
+  name: ocp3ipi
+networking:
+  clusterNetwork:
+  - cidr: 10.128.0.0/14
+    hostPrefix: 23
+  machineNetwork:
+  - cidr: 10.38.212.128/25
+  networkType: OVNKubernetes
+  serviceNetwork:
+  - 172.30.0.0/16
+platform:
+  nutanix:
+    apiVIPs:
+    - 10.38.212.193
+    ingressVIPs:
+    - 10.38.212.194
+    prismCentral:
+      endpoint:
+        address: pc.ntnxlab.local
+        port: 9440
+      password: nx2Tech183!
+      username: admin
+    prismElements:
+    - endpoint:
+        address: 10.38.212.37
+        port: 9440
+      uuid: 0005ef09-4880-dc34-3b44-ac1f6b3bba8b
+    subnetUUIDs:
+    - 52001977-179f-4bb0-ac79-d947a776382f
+publish: External
+pullSecret: '{"auths":{"cloud.openshift.com":{"auth":"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfZjQ1MjAwNTZmMDM0NGUxNTllNGI0MTYwYjNiMjhjMjY6OFZTQ0FYRDA4VUpHWDdPSEIyQU5VVjFNMDNEVVgzSURPR1M4UEkzVzdFNkswUU45Wkk3S1hYUFpXTzA5N0k4NQ==","email":"matthew.ong@nutanix.com"},"quay.io":{"auth":"b3BlbnNoaWZ0LXJlbGVhc2UtZGV2K29jbV9hY2Nlc3NfZjQ1MjAwNTZmMDM0NGUxNTllNGI0MTYwYjNiMjhjMjY6OFZTQ0FYRDA4VUpHWDdPSEIyQU5VVjFNMDNEVVgzSURPR1M4UEkzVzdFNkswUU45Wkk3S1hYUFpXTzA5N0k4NQ==","email":"matthew.ong@nutanix.com"},"registry.connect.redhat.com":{"auth":"fHVoYy1wb29sLTY4NDM1ZjcyLTI2YWEtNDUyNy1hYzJjLTM3YjI5ZDhhOTIzMjpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSmtaREE0TjJJeU56QmtaamcwTmpKa09XSXdNemt3WW1RNE9UVTBaVFJqWVNKOS5uNmRZVHZzakZtbUZwdDhuYlF6ODFFMF9TRV9BSnJJb1dNQldkQnczSE10YmF3M1pyb3ZRTzNXZ0lIT2RiVUNLZmZZYnVmcEYxNWZyYVZkeG1VZXIyLVZkMmt6ZFhNNGYzTzVEQ3pjVkFiR241Qk92MmpxaUZVTmRHSldMSXBrb0lleDltOUVsaXFSckEtdHNQMUdDSTRFUWtpbnUxT29raGJhY0U4bXJpQnVnbkRlRWtpc0hQZ2hnRHp1d09nd3ZEdlc3NEtKNGxWQjdaRUhkRjJNZ29teGxZZDkxSjZ4ZHNVamNlN1RVTmF1UEwtMWhjNEdEbWplWGlXSkZlRTZZbWkzQ1N5SWdEVjIwaFg2ZWhsejdYX2dESXBpOGszcGgyTmVFcm4xclR6Ny1oam5jV0t2cG1WZ3VaOEVNWUlPVnhtRVVFekQxaXNXQkFiNXMtcGJybFRDM29CcVZibWhFaVFwdndFS2gwNVB4V0h0b0QzTzFlbmNRSlhMVWpRdjZoZ0dnUHJOcWJRMWVoWWRPZi12Mi00SVF4WndEY0JqT21XazNGNnMwdlhWSTNQWjh2MTNiZnByS2pSMkF6bnJpSFNMVG9hY3g2TXVrc0lxOHNyYnAwQ3FBVTNwcndnbGJBSHRXMEpRWVFRaFlCdDJONlFESzhMcDh0Z3Jadkg5NDF1ZnhLcFZpUEtGQlZqWU1KVWlMVVhzQ1JuUVAzaUpxQ2tFT0Mya3ljWU9nQUNwMW1lZzRGSTRkaXctSlN4bDVfdHhLa0ZqRWo0clJUNmhLXzRvVGprcUV6QkdJQ042a0ljcm5LY2lBd0xwQ0NsYXJ3eV9ENE1tSjhHT2JvUlFJdkg0Y3lGN3EtcTN1QkRieXhtWE1Bdl9XeFd0VElyRkRJM3MtdFlKQVRFRQ==","email":"matthew.ong@nutanix.com"},"registry.redhat.io":{"auth":"fHVoYy1wb29sLTY4NDM1ZjcyLTI2YWEtNDUyNy1hYzJjLTM3YjI5ZDhhOTIzMjpleUpoYkdjaU9pSlNVelV4TWlKOS5leUp6ZFdJaU9pSmtaREE0TjJJeU56QmtaamcwTmpKa09XSXdNemt3WW1RNE9UVTBaVFJqWVNKOS5uNmRZVHZzakZtbUZwdDhuYlF6ODFFMF9TRV9BSnJJb1dNQldkQnczSE10YmF3M1pyb3ZRTzNXZ0lIT2RiVUNLZmZZYnVmcEYxNWZyYVZkeG1VZXIyLVZkMmt6ZFhNNGYzTzVEQ3pjVkFiR241Qk92MmpxaUZVTmRHSldMSXBrb0lleDltOUVsaXFSckEtdHNQMUdDSTRFUWtpbnUxT29raGJhY0U4bXJpQnVnbkRlRWtpc0hQZ2hnRHp1d09nd3ZEdlc3NEtKNGxWQjdaRUhkRjJNZ29teGxZZDkxSjZ4ZHNVamNlN1RVTmF1UEwtMWhjNEdEbWplWGlXSkZlRTZZbWkzQ1N5SWdEVjIwaFg2ZWhsejdYX2dESXBpOGszcGgyTmVFcm4xclR6Ny1oam5jV0t2cG1WZ3VaOEVNWUlPVnhtRVVFekQxaXNXQkFiNXMtcGJybFRDM29CcVZibWhFaVFwdndFS2gwNVB4V0h0b0QzTzFlbmNRSlhMVWpRdjZoZ0dnUHJOcWJRMWVoWWRPZi12Mi00SVF4WndEY0JqT21XazNGNnMwdlhWSTNQWjh2MTNiZnByS2pSMkF6bnJpSFNMVG9hY3g2TXVrc0lxOHNyYnAwQ3FBVTNwcndnbGJBSHRXMEpRWVFRaFlCdDJONlFESzhMcDh0Z3Jadkg5NDF1ZnhLcFZpUEtGQlZqWU1KVWlMVVhzQ1JuUVAzaUpxQ2tFT0Mya3ljWU9nQUNwMW1lZzRGSTRkaXctSlN4bDVfdHhLa0ZqRWo0clJUNmhLXzRvVGprcUV6QkdJQ042a0ljcm5LY2lBd0xwQ0NsYXJ3eV9ENE1tSjhHT2JvUlFJdkg0Y3lGN3EtcTN1QkRieXhtWE1Bdl9XeFd0VElyRkRJM3MtdFlKQVRFRQ==","email":"matthew.ong@nutanix.com"}}}'
+sshKey: |
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzI6k7QM7DCqyfmLCQd4ABvRUv6xGIpUaBaaXNJLYu4ToSzeC3cQ+2S4Xmui2cJ03yF57k189O6kRJYp5rQv/By6n2r5uR8Mq+YWy3EFzE0twVmrD+j8WDr8QJ9k+s1mLipngDi3ZyOfivEy9nEudbFMfrS5bTGKHnWrbielroGItM2v8dwLYEF4S4JZIIfeadL7ZZ/9NebQOPELpMDpaEyQOF5qDYQHbe8nXCfFrVXs2UCK4OgmbO3AQqnEJ6oTRH8XljLxUI+v1nU8ujOYsQMBnphY2DN7xo9BW9rymgKtkL+vPP3US5/XPfhzKq5NK3WQpkfq1rY+Xfwb55xtJp root@centos
